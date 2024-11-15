@@ -19,7 +19,14 @@ public class Usuario {
  @GeneratedValue(strategy = GenerationType.IDENTITY)
  
  private String Id; 
- private String email; 	 
+ private String email;
+
+ 
+ 
+ public String getNome() { 
+	
+}
+
 	 
 	 
 
