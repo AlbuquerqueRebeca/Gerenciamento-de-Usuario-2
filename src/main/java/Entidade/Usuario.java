@@ -45,7 +45,7 @@ public class Usuario {
 	 return Id;
  }
  
- public void setId() {
+ public void setId(String Id) {
 	 
  }
 
