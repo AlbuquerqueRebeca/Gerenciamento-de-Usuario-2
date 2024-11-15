@@ -44,6 +44,10 @@ public class Usuario {
  public String getId() {
 	 return Id;
  }
+ 
+ public void setId() {
+	 
+ }
 
 	 
 	 
