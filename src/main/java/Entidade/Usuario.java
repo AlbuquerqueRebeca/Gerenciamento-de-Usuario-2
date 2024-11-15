@@ -46,7 +46,7 @@ public class Usuario {
  }
  
  public void setId(String Id) {
-	 
+	 this.Id = Id;
  }
 
 	 
