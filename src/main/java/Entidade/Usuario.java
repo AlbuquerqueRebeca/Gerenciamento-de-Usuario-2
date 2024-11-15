@@ -10,6 +10,7 @@ import jakarta.persistence.Table;
 public class Usuario {
 
  private String nome;
+ private String senha;
 
 
 
