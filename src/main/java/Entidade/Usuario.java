@@ -16,7 +16,10 @@ public class Usuario {
  private String senha;
  
  @Id
- @GeneratedValue(strategy = GenerationType.IDENTITY) 
+ @GeneratedValue(strategy = GenerationType.IDENTITY)
+ 
+ private String Id: 
+
 
 
 
