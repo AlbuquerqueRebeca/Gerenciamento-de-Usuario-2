@@ -37,7 +37,7 @@ public class Usuario {
 	 
  }
  
- public void setSenha() {
+ public void setSenha(String senha) {
 	 
  }
 
