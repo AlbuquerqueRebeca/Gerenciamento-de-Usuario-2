@@ -6,6 +6,8 @@ import jakarta.persistence.Table;
 public class Usuario {
 	
 @Entity	
-@Table 
+@Table(name = "Usuario") 
+
+
 
 }
