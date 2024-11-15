@@ -36,6 +36,10 @@ public class Usuario {
 	 return senha;
 	 
  }
+ 
+ public void setSenha() {
+	 
+ }
 
 	 
 	 
