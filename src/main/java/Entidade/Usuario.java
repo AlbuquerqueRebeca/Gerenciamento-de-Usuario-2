@@ -42,7 +42,7 @@ public class Usuario {
  }
  
  public String getId() {
-	 
+	 return Id;
  }
 
 	 
