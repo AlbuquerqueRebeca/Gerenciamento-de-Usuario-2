@@ -8,10 +8,15 @@ public class Usuario {
 	
 	
  @Id
- private String email;
+ private String email; //buscar por email
  private String nome;
  private String senha;
-	
+ 
+ 
+ 
+ public String getNome() {
+	 
+ }
 	
 	
 	
