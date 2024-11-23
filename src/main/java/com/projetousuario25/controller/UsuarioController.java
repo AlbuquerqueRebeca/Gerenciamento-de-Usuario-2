@@ -21,7 +21,8 @@ public class UsuarioController {
 
    @PostMapping("/registrar-usuario")
 public ResponseEntity<String> registrarUsuario(@RequestBody Usuario usuario){
-Usuario salvarUsuario = usuarioRepository.save(usuario)	   
+Usuario salvarUsuario = usuarioRepository.save(usuario);
+return ResponseEntity.ok("Usuario registrado com sucesso!! ") 
    }
 
 
