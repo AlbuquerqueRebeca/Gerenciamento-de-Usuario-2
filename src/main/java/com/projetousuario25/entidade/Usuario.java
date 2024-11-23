@@ -18,8 +18,8 @@ public class Usuario {
 	 return nome; 
  }
  
- public void setNome() {
-	 
+ public void setNome(String nome) { 
+	
  }
 	
 	
