@@ -17,8 +17,8 @@ public class UsuarioController {
    private UsuarioRepository usuarioRepository; 
 
 
-   @PostMapping 
-public ResponseEntity<String>
+   @PostMapping("/registrar-usuario")
+public ResponseEntity<String> r
 
 
 
