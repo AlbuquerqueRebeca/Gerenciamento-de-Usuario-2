@@ -2,7 +2,9 @@ package com.projetousuario25.repositorio;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UsuarioRepository extends JpaRepository<T, ID>{ 
+import com.projetousuario25.entidade.Usuario;
+
+public interface UsuarioRepository extends JpaRepository<Usuario, String>{ 
 	
 	
 
