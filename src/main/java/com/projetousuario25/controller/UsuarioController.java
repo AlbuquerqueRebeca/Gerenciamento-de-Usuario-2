@@ -19,7 +19,7 @@ public class UsuarioController {
 
 
    @PostMapping("/registrar-usuario")
-public ResponseEntity<String> registrarUsuario 
+public ResponseEntity<String> registrarUsuario(@RequestBody) 
 
 
 
