@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.projetousuario25.entidade.Usuario;
 import com.projetousuario25.repositorio.UsuarioRepository;
 
 @RestController  
@@ -19,7 +20,9 @@ public class UsuarioController {
 
 
    @PostMapping("/registrar-usuario")
-public ResponseEntity<String> registrarUsuario(@RequestBody) 
+public ResponseEntity<String> registrarUsuario(@RequestBody Usuario usuario){
+	   
+   }
 
 
 
