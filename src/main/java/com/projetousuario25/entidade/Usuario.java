@@ -8,7 +8,7 @@ public class Usuario {
 	
 	
  @Id
- 
+ private String email;
 	
 	
 	
