@@ -1,5 +1,6 @@
 package com.projetousuario25.controller;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,7 +39,11 @@ if(usuarioEncontrado.isPresent()) {
 } else {
 	return ResponseEntity.notFound().build(); 
 }
-
-
 }
+
+//listar todos os usuarios 
+@GetMapping
+
+
+
 }
