@@ -31,7 +31,7 @@ return ResponseEntity.ok("Usuario registrado com sucesso!! " + salvarUsuario.get
 
  //Buscando Usuario por Email   
 @GetMapping("/usuario")
-public ResponseEntity<usuario>
+public ResponseEntity<usuario> buscandoUsuario 
 
 
 
