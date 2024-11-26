@@ -34,7 +34,8 @@ return ResponseEntity.ok("Usuario registrado com sucesso!! " + salvarUsuario.get
 public ResponseEntity<Usuario> buscandoUsuario(@RequestParam String email){ 
 Optional<Usuario> usuarioEncontrado = usuarioRepository.findById(email); 
 if(usuarioEncontrado.isPresent()) {  
-}
+ return ResponseEntity.ok(usuarioEncontrado.get()); 
+} 
 
 
 }
