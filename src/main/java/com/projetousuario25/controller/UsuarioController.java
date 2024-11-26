@@ -43,7 +43,7 @@ if(usuarioEncontrado.isPresent()) {
 
 //listar todos os usuarios 
 @GetMapping("/todos-usuarios") 
-public ResponseEntity<List<Usuario>> 
+public ResponseEntity<List<Usuario>> listarUsuario 
 
 
 
