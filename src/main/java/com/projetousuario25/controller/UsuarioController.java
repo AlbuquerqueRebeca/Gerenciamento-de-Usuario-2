@@ -44,7 +44,8 @@ if(usuarioEncontrado.isPresent()) {
 //listar todos os usuarios 
 @GetMapping("/todos-usuarios") 
 public ResponseEntity<List<Usuario>> listarUsuario(){
- List<Usuario> usuarios = usuarioRepository.findAll(); 
+ List<Usuario> usuarios = usuarioRepository.findAll();
+ return ResponseEntity.ok(usuarios); 
 }
 
 
