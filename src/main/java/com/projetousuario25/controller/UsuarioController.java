@@ -42,7 +42,7 @@ if(usuarioEncontrado.isPresent()) {
 }
 
 //listar todos os usuarios 
-@GetMapping
+@GetMapping("/todos-usuarios") 
 
 
 
