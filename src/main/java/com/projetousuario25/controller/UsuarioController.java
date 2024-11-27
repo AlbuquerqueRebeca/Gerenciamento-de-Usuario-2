@@ -50,6 +50,6 @@ public ResponseEntity<List<Usuario>> listarUsuario(){
 }
 
 //Atualializando Perfil 
-@PutMapping 
+@PutMapping("/atualizar-perfil") 
 
 }
