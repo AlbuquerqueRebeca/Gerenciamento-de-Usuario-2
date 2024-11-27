@@ -52,7 +52,7 @@ public ResponseEntity<List<Usuario>> listarUsuario(){
 //Atualializando Perfil 
 @PutMapping("/atualizar-perfil") 
 public ResponseEntity<Usuario> atualizandoPerfil(@RequestBody Usuario usuario){ 
-Usuario perfilEditado 	
+Usuario perfilEditado = usuarioRepository.save(); 	
 }
 
 }
