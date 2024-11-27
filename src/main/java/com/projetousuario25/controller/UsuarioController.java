@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -44,10 +45,11 @@ if(usuarioEncontrado.isPresent()) {
 //listar todos os usuarios 
 @GetMapping("/todos-usuarios") 
 public ResponseEntity<List<Usuario>> listarUsuario(){
- List<Usuario> usuarios = usuarioRepository.findAll();
+ List<Usuario> usuarios = usuarioRepository.findAll(); 
  return ResponseEntity.ok(usuarios); 
 }
 
-
+//Atualializando Perfil 
+@PutMapping 
 
 }
