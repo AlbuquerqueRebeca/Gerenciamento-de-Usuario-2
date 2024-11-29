@@ -59,5 +59,6 @@ return ResponseEntity.ok(perfilEditado);
 
 //Deletar Perfil
 @DeleteMapping("/deletar-perfil") 
+public ResponseEntity<String>  
 
 }
