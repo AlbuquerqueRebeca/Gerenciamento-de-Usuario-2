@@ -64,7 +64,9 @@ Optional<Usuario> apagarPerfil = usuarioRepository.findById(email);
 if(apagarPerfil.isPresent()) {
 usuarioRepository.delete(apagarPerfil.get()); 
 return ResponseEntity.ok("Perfil Deletado com Sucesso!!!"); 
-}
+}else {
+	return ResponseEntity.notFound().build(); 
+			}
 
 }
 
