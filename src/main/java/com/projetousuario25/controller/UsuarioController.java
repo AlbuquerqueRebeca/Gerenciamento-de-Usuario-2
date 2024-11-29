@@ -62,7 +62,8 @@ return ResponseEntity.ok(perfilEditado);
 public ResponseEntity<String>  deletandoPerfil(@RequestParam String email){
 Optional<Usuario> apagarPerfil = usuarioRepository.findById(email);	 
 if(apagarPerfil.isPresent()) {
-usuarioRepository.delete(apagarPerfil.get()); 	
+usuarioRepository.delete(apagarPerfil.get()); 
+return ResponseEntity.ok("Perfil Deletado com Sucesso!!!"); 
 }
 
 }
