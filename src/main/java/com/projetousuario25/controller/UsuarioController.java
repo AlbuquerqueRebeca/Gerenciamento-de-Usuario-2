@@ -61,6 +61,10 @@ return ResponseEntity.ok(perfilEditado);
 @DeleteMapping("/deletar-perfil") 
 public ResponseEntity<String>  deletandoPerfil(@RequestParam String email){
 Optional<Usuario> apagarPerfil = usuarioRepository.delete(email);	 
+if(apagarPerfil.isPresent()) {
+	
+}
+
 }
 
 }
