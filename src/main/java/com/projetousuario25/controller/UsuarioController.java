@@ -58,6 +58,6 @@ return ResponseEntity.ok(perfilEditado);
 }
 
 //Deletar Perfil
-@DeleteMapping  
+@DeleteMapping("/deletar-perfil") 
 
 }
