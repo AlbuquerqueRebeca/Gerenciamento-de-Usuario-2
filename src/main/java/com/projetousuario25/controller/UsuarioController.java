@@ -46,7 +46,7 @@ public class UsuarioController {
 	
 	
 	//Buscando Usuario por Email
-	@GetMapping 
+	@GetMapping("/usuario") 
 	
 	
 	
