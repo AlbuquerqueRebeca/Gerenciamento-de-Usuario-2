@@ -37,6 +37,7 @@ public class UsuarioController {
 		try {
 			
 			   usuarioService.registrandoUsuario(usuario);
+			   return ResponseEntity.ok("Usuario registrado com sucesso!!!" + usuario.getNome());
 		}
 	}
 	
