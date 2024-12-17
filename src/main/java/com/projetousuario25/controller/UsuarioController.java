@@ -59,7 +59,8 @@ public class UsuarioController {
 	//Listar todos os Usuarios
     @GetMapping("/todos-usuarios") 
     public ResponseEntity<List<Usuario>>  listarUsuario(){
-    List<Usuario> usuarios = usuarioRepository.findAll(); 	
+    List<Usuario> usuarios = usuarioRepository.findAll(); 
+    return ResponseEntity.ok(usuarios); 
     }
 	
 	
