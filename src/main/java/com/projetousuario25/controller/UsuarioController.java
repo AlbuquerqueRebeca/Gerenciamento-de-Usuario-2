@@ -36,13 +36,17 @@ public class UsuarioController {
 	public ResponseEntity<String> registrarUsuario(@RequestBody Usuario usuario) {
 		try {
 			
-			   usuarioService.registrarUsuario(usuario);
+			   usuarioService.registrandoUsuario(usuario);
 			   return ResponseEntity.ok("Usuario registrado com sucesso!!!" + usuario.getNome());
 		       }catch(RuntimeException e) { 
 		    	   return ResponseEntity.badRequest().body(e.getMessage());
 		    	   
 		       }
 	}
+	
+	
+	//Buscando Usuario por Email
+	@GetMapping 
 	
 	
 	
