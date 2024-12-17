@@ -72,6 +72,7 @@ public class UsuarioController {
     
     //Deletar Perfil
     @DeleteMapping("/deletar-perfil") 
+    public ResponseEntity<String> 
     
 	
 	
