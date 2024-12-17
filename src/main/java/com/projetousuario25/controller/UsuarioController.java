@@ -71,7 +71,7 @@ public class UsuarioController {
     }
     
     //Deletar Perfil
-    @DeleteMapping
+    @DeleteMapping("/deletar-perfil") 
     
 	
 	
