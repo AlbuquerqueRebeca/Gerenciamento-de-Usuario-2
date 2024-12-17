@@ -65,6 +65,7 @@ public class UsuarioController {
 	
     //Atualizando Perfil
     @PutMapping("/atualizar-perfil")
+    public ResponseEntity<Usuario> 
     
 	
 	
