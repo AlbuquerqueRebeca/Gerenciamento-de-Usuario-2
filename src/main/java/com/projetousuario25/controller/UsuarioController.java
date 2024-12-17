@@ -33,7 +33,7 @@ public class UsuarioController {
 	
 	//Registrando usuario
 	@PostMapping("/registrar-usuario") 
-	public ResponseEntity<String> registrarUsuario
+	public ResponseEntity<String> registrarUsuario(@RequestBody Usuario usuario)  
 	
 	
 	
