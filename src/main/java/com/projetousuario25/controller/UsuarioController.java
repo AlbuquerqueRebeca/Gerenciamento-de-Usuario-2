@@ -28,6 +28,7 @@ public class UsuarioController {
    private UsuarioRepository usuarioRepository; 
 	
 	@Autowired 
+	private UsuarioService usuarioService;  
 	
 	
 }
