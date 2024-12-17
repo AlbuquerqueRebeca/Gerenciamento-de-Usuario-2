@@ -48,7 +48,7 @@ public class UsuarioController {
 	//Buscando Usuario por Email
 	@GetMapping("/usuario") 
 	public ResponseEntity<Usuario> buscandoUsuario(@RequestParam String email){
-    Optional<Usuario> usuarioEncontrado
+    Optional<Usuario> usuarioEncontrado = usuarioRepository.findAll(email); 
 	}
 	
 	
