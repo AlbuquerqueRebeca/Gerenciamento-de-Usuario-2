@@ -31,4 +31,18 @@ public class UsuarioController {
 	private UsuarioService usuarioService;  
 	
 	
+	//Registrando usuario
+	@PostMapping 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
