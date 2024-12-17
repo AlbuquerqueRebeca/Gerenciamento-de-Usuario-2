@@ -77,6 +77,8 @@ public class UsuarioController {
     if(apagarPerfil.isPresent()) {
     	usuarioRepository.delete(apagarPerfil.get());
     	return ResponseEntity.ok("Perfil deletado com sucesso!!!") ; 
+    	}else {
+    		return ResponseEntity.notFound().build(); 
     	}
     }
     
