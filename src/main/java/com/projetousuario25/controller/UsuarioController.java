@@ -57,7 +57,7 @@ public class UsuarioController {
 	}
 	
 	//Listar todos os Usuarios
-    @GetMapping 
+    @GetMapping("/todos-usuarios") 
 	
 	
 	
