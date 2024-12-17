@@ -51,7 +51,9 @@ public class UsuarioController {
     Optional<Usuario> usuarioEncontrado = usuarioRepository.findById(email); 
     if(usuarioEncontrado.isPresent()) {
     	return ResponseEntity.ok(usuarioEncontrado.get()); 
-    }
+       }else {
+    	   return ResponseEntity.notFound().build(); 
+       }
 	}
 	
 	
