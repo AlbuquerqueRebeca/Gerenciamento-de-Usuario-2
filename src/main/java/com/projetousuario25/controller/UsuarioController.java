@@ -65,7 +65,9 @@ public class UsuarioController {
 	
     //Atualizando Perfil
     @PutMapping("/atualizar-perfil")
-    public ResponseEntity<Usuario> atualizandoPerfil
+    public ResponseEntity<Usuario> atualizandoPerfil(@RequestBody Usuario usuario){
+    	
+    }
     
 	
 	
