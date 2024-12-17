@@ -73,7 +73,7 @@ public class UsuarioController {
     //Deletar Perfil
     @DeleteMapping("/deletar-perfil") 
     public ResponseEntity<String> deletandoPerfil(@RequestParam String email) {
-    Optional<Usuario> apagarPerfil = 
+    Optional<Usuario> apagarPerfil = usuarioRepository.findById(email);
     }
     
 	
