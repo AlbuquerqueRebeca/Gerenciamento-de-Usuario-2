@@ -58,7 +58,9 @@ public class UsuarioController {
 	
 	//Listar todos os Usuarios
     @GetMapping("/todos-usuarios") 
-    public ResponseEntity<List<Usuario>>  
+    public ResponseEntity<List<Usuario>>  listarUsuario(){
+    List<Usuario> 	
+    }
 	
 	
 	
