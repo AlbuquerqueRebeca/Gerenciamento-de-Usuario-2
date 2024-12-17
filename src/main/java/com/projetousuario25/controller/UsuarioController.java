@@ -70,6 +70,9 @@ public class UsuarioController {
     return ResponseEntity.ok(perfilEditado); 
     }
     
+    //Deletar Perfil
+    @DeleteMapping
+    
 	
 	
 	
