@@ -33,7 +33,12 @@ public class UsuarioController {
 	
 	//Registrando usuario
 	@PostMapping("/registrar-usuario") 
-	public ResponseEntity<String> registrarUsuario(@RequestBody Usuario usuario)  
+	public ResponseEntity<String> registrarUsuario(@RequestBody Usuario usuario) {
+		try {
+			
+			   usuarioService.registrandoUsuario(usuario);
+		}
+	}
 	
 	
 	
