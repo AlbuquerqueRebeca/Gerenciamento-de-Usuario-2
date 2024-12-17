@@ -32,7 +32,8 @@ public class UsuarioController {
 	
 	
 	//Registrando usuario
-	@PostMapping 
+	@PostMapping("/registrar-usuario") 
+	
 	
 	
 	
