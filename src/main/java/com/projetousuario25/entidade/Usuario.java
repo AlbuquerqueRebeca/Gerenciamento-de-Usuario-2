@@ -8,8 +8,11 @@ public class Usuario {
 	
 	
  @Id
- private String email; //buscar por email
+ private String email; //buscar por email //identificado unico
+
+ 
  private String nome;
+ private String login;
  private String senha;
  
  
@@ -37,6 +40,16 @@ public class Usuario {
  public void setEmail(String email) {
      this.email = email;	 
  }
+
+public String getLogin() {
+	return login;
+}
+
+public void setLogin(String login) {
+	this.login = login;
+}
+ 
+ 
 	
 	
 	

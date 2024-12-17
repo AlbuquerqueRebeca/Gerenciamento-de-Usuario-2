@@ -14,8 +14,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.projetousuario25.dto.UserRegisterDto;
 import com.projetousuario25.entidade.Usuario;
 import com.projetousuario25.repositorio.UsuarioRepository;
+import com.projetousuario25.service.UsuarioService;
 
 @RestController  
 @RequestMapping("/api")
@@ -24,50 +26,8 @@ public class UsuarioController {
 	
 	@Autowired 
    private UsuarioRepository usuarioRepository; 
-
-//Registrando Usuario
-   @PostMapping("/registrar-usuario")
-public ResponseEntity<String> registrarUsuario(@RequestBody Usuario usuario){
-Usuario salvarUsuario = usuarioRepository.save(usuario);
-return ResponseEntity.ok("Usuario registrado com sucesso!! " + salvarUsuario.getNome()); 
-   }
-
- //Buscando Usuario por Email   
-@GetMapping("/usuario")
-public ResponseEntity<Usuario> buscandoUsuario(@RequestParam String email){ 
-Optional<Usuario> usuarioEncontrado = usuarioRepository.findById(email); 
-if(usuarioEncontrado.isPresent()) {  
- return ResponseEntity.ok(usuarioEncontrado.get()); 
-} else {
-	return ResponseEntity.notFound().build(); 
-}
-}
-
-//listar todos os usuarios 
-@GetMapping("/todos-usuarios") 
-public ResponseEntity<List<Usuario>> listarUsuario(){
- List<Usuario> usuarios = usuarioRepository.findAll(); 
- return ResponseEntity.ok(usuarios); 
-}
-
-//Atualializando Perfil 
-@PutMapping("/atualizar-perfil") 
-public ResponseEntity<Usuario> atualizandoPerfil(@RequestBody Usuario usuario){ 
-Usuario perfilEditado = usuarioRepository.save(usuario);
-return ResponseEntity.ok(perfilEditado); 
-}
-
-//Deletar Perfil
-@DeleteMapping("/deletar-perfil") 
-public ResponseEntity<String>  deletandoPerfil(@RequestParam String email){
-Optional<Usuario> apagarPerfil = usuarioRepository.findById(email);	 
-if(apagarPerfil.isPresent()) {
-usuarioRepository.delete(apagarPerfil.get()); 
-return ResponseEntity.ok("Perfil Deletado com Sucesso!!!"); 
-}else {
-	return ResponseEntity.notFound().build(); 
-			}
-
-}
-
+	
+	@Autowired 
+	
+	
 }
