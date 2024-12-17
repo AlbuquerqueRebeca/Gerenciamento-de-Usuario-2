@@ -39,6 +39,7 @@ public class UsuarioController {
 			   usuarioService.registrarUsuario(usuario);
 			   return ResponseEntity.ok("Usuario registrado com sucesso!!!" + usuario.getNome());
 		       }catch(RuntimeException e) { 
+		    	   return ResponseEntity.badRequest().body(e.getMessage());
 		    	   
 		       }
 	}
