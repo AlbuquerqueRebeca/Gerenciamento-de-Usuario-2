@@ -74,6 +74,10 @@ public class UsuarioController {
     @DeleteMapping("/deletar-perfil") 
     public ResponseEntity<String> deletandoPerfil(@RequestParam String email) {
     Optional<Usuario> apagarPerfil = usuarioRepository.findById(email);
+    if(apagarPerfil.isPresent()) {
+    	usuarioRepository.delete(apagarPerfil.get());
+    	return ResponseEntity.ok("Perfil deletado com sucesso!!!") ; 
+    	}
     }
     
 	
