@@ -47,6 +47,7 @@ public class UsuarioController {
 	
 	//Buscando Usuario por Email
 	@GetMapping("/usuario") 
+	public ResponseEntity<Usuario>
 	
 	
 	
