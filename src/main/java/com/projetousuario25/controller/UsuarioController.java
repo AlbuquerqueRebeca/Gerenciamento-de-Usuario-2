@@ -67,6 +67,7 @@ public class UsuarioController {
     @PutMapping("/atualizar-perfil")
     public ResponseEntity<Usuario> atualizandoPerfil(@RequestBody Usuario usuario){
     Usuario perfilEditado = usuarioRepository.save(usuario);
+    return ResponseEntity.ok(perfilEditado); 
     }
     
 	
