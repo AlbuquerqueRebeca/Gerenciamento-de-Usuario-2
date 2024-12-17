@@ -64,7 +64,8 @@ public class UsuarioController {
     }
 	
     //Atualizando Perfil
-    @PutMapping
+    @PutMapping("/atualizar-perfil")
+    
 	
 	
 	
