@@ -63,6 +63,8 @@ public class UsuarioController {
     return ResponseEntity.ok(usuarios); 
     }
 	
+    //Atualizando Perfil
+    @PutMapping
 	
 	
 	
