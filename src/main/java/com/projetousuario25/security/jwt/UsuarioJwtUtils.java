@@ -45,6 +45,10 @@ public class UsuarioJwtUtils{
 		}
 	
 	    public boolean validateJwtToken(String authToken) { 
+	    	try {
+	    		 
+	    		  Jwts.parser().setSigningKey(getSigninkey()).parseClaimsJws(authToken);
+	    	}
 	    	
 	    }
 }
