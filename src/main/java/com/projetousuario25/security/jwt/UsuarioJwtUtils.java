@@ -42,6 +42,9 @@ public class UsuarioJwtUtils{
 	public String getUsernameToken(String token) { 
 		return Jwts.parser().setSigningKey(getSigninKey())
 			       .parseClaimsJws(token).getBody().getSubject(); 	
-		
-	}
+		}
+	
+	    public boolean validateJwtToken(String authToken) { 
+	    	
+	    }
 }
