@@ -8,6 +8,7 @@ import org.springframework.security.config.annotation.authentication.configurati
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 import com.projetousuario25.security.jwt.AuthEntrypointJwt;
+import com.projetousuario25.security.jwt.AuthFilterToken;
 
 @Configuration
 @EnableWebSecurity
@@ -23,6 +24,9 @@ public class UsuarioSecurityConfig{
 	}
 	
 	@Bean
+	public AuthFilterToken authFilterToken() {
+		
+	}
 	
 	
 	
