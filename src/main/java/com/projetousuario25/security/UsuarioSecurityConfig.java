@@ -37,6 +37,7 @@ public class UsuarioSecurityConfig{
 		    
 		             http.cors(Customizer.withDefaults()); 
 		             http.csrf(csrf -> csrf.disable()) 
+		                        .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler))
 	}
 	
 	
