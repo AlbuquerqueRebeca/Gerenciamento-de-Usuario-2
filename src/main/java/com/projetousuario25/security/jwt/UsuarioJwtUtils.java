@@ -21,7 +21,7 @@ public class UsuarioJwtUtils{
 	
 	public String generateTokenFromUserDetailsImpl(UsuarioDetailsImpl userDetail) {
 		
-		  return Jwts.builder() 
+		  return Jwts.builder().setSubject(userDetail.getUsername()) 
 	}
 	
 	
