@@ -12,6 +12,8 @@ public class UsuarioJwtUtils{
 	
 	
 	@Value("${projeto.jwtExpirationMs}")
+	private int jwtExpirationMs;  
+	
 	
 	
 }
