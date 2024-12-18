@@ -3,6 +3,8 @@ package com.projetousuario25.security.jwt;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
+import com.projetousuario25.service.UsuarioDetailsImpl;
+
 @Component  
 public class UsuarioJwtUtils{
 	
@@ -13,6 +15,11 @@ public class UsuarioJwtUtils{
 	
 	@Value("${projeto.jwtExpirationMs}")
 	private int jwtExpirationMs;  
+	
+	
+	public String generateTokenFromUserDetailsImpl(UsuarioDetailsImpl userDetail) {
+		
+	}
 	
 	
 	
