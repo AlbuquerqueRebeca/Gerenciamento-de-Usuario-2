@@ -18,7 +18,9 @@ public class UsuarioSecurityConfig{
 	
 	
 	@Bean  
-	public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration)
+	public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
+		
+	}
 	
 	
 	
