@@ -25,10 +25,10 @@ public class UsuarioSecurityConfig{
 	
 	@Bean
 	public AuthFilterToken authFilterToken() {
-		return new AuthFilterToken(); 
+		return new AuthFilterToken();
 	}
 	
-	
+	@Bean
 	
 	
 	
