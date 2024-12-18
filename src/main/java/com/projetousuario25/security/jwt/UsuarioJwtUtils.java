@@ -8,6 +8,7 @@ public class UsuarioJwtUtils{
 	
 	
 	@Value("${projeto.jwtSecret}")
+	private String jwtSecret; 
 	
 	
 }
