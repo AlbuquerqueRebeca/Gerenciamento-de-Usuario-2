@@ -4,6 +4,8 @@ package com.projetousuario25.security.jwt;
 import java.security.Key;
 import java.util.Date;
 
+import javax.crypto.SecretKey;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -11,6 +13,8 @@ import com.projetousuario25.service.UsuarioDetailsImpl;
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.io.Decoders;
+import io.jsonwebtoken.security.Keys;
 
 @Component  
 public class UsuarioJwtUtils{
@@ -32,7 +36,7 @@ public class UsuarioJwtUtils{
 	}
 	
 	public Key  getSigninKey() { 
-		
+	SecretKey key = Keys.hmacShaKeyFor(Decoders.BASE64.decode(jwtSecret)); 	
 	}
 	
 	
