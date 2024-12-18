@@ -10,6 +10,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import com.projetousuario25.security.jwt.AuthEntrypointJwt;
 import com.projetousuario25.security.jwt.AuthFilterToken;
@@ -43,6 +44,13 @@ public class UsuarioSecurityConfig{
 		                        .authorizeHttpRequests(auth -> auth.requestMatchers("/auth/**").permitAll()
 		                        .requestMatchers("/api/registrar-usuario**").permitAll()
 		                        .anyRequest().authenticated()); 
+	 
+		             
+		             http.addFilterBefore(authFilterToken(), UsernamePasswordAuthenticationFilter.class);
+	
+	
+	
+	
 	}
 	
 	
