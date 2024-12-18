@@ -5,6 +5,8 @@ import org.springframework.stereotype.Component;
 
 import com.projetousuario25.service.UsuarioDetailsImpl;
 
+import io.jsonwebtoken.Jwts;
+
 @Component  
 public class UsuarioJwtUtils{
 	
@@ -19,6 +21,7 @@ public class UsuarioJwtUtils{
 	
 	public String generateTokenFromUserDetailsImpl(UsuarioDetailsImpl userDetail) {
 		
+		  return Jwts.builder() 
 	}
 	
 	
