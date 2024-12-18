@@ -39,5 +39,7 @@ public class UsuarioJwtUtils{
 	SecretKey key = Keys.hmacShaKeyFor(Decoders.BASE64.decode(jwtSecret)); 	
 	}
 	
-	
+	public String getUsernameToken(String token) { 
+		
+	}
 }
