@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import com.projetousuario25.service.UsuarioDetailsImpl;
 
 import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 
 @Component  
 public class UsuarioJwtUtils{
@@ -25,6 +26,7 @@ public class UsuarioJwtUtils{
 		
 		  return Jwts.builder().setSubject(userDetail.getUsername()) 
 				               .setIssuedAt(new Date())
+				               .signWith(getSigninkey(), SignatureAlgorithm.HS512).compact();
 	}
 	
 	
