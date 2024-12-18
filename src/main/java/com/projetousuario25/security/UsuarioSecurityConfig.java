@@ -31,7 +31,9 @@ public class UsuarioSecurityConfig{
 	}
 	
 	@Bean
-	public SecurityFilterChain filterChain(HttpSecurity http) 
+	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
+		
+	}
 	
 	
 	
