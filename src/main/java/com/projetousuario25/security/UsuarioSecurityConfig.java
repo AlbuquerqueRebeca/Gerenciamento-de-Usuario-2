@@ -47,7 +47,7 @@ public class UsuarioSecurityConfig{
 	 
 		             
 		             http.addFilterBefore(authFilterToken(), UsernamePasswordAuthenticationFilter.class);
-	
+	                    return http.build(); 
 	
 	
 	
