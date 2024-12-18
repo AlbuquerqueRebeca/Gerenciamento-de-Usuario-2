@@ -1,5 +1,7 @@
 package com.projetousuario25.security.jwt;
 
+
+import java.security.Key;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -29,6 +31,9 @@ public class UsuarioJwtUtils{
 				               .signWith(getSigninkey(), SignatureAlgorithm.HS512).compact();
 	}
 	
+	public Key  getSigninKey() { 
+		
+	}
 	
 	
 }
