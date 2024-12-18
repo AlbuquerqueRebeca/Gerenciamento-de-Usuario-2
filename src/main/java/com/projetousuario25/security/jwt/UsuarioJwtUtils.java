@@ -1,5 +1,7 @@
 package com.projetousuario25.security.jwt;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -22,6 +24,7 @@ public class UsuarioJwtUtils{
 	public String generateTokenFromUserDetailsImpl(UsuarioDetailsImpl userDetail) {
 		
 		  return Jwts.builder().setSubject(userDetail.getUsername()) 
+				               .setIssuedAt(new Date())
 	}
 	
 	
