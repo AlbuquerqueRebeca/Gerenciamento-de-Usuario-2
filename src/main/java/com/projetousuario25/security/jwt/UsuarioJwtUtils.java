@@ -55,7 +55,11 @@ public class UsuarioJwtUtils{
 	    	    	 System.out.println("Token inválido" + e.getMessage()); 
 	    	      }catch(ExpiredJwtException e) { 
 	    	    	 System.out.println("Token expirado" + e.getMessage());  
+	    	      }catch(UnsupportedJwtException e) { 
+	    	    	  
 	    	      }
+	    	    	
+	    	      
 	    	
 	    }
 }
