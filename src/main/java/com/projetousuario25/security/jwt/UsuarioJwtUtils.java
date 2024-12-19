@@ -48,7 +48,10 @@ public class UsuarioJwtUtils{
 	    	try {
 	    		 
 	    		  Jwts.parser().setSigningKey(getSigninkey()).parseClaimsJws(authToken);
-	    	}
+	    		  return true;
+	    	      }catch(MalformedJwtException e) {
+	    	    	  
+	    	      }
 	    	
 	    }
 }
