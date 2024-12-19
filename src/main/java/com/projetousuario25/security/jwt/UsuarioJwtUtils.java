@@ -59,7 +59,7 @@ public class UsuarioJwtUtils{
 	    	      }catch(UnsupportedJwtException e) { 
 	    	    	  System.out.println("Token não suportado" + e.getMessage()); 
 	    	      }catch(IllegalArgumentException e) { 
-	    	    	  
+	    	    	  System.out.println("Token argumento inválido" e.getMessage()); 
 	    	      }
 	    	    	
 	    	      
