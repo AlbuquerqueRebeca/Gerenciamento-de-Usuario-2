@@ -16,6 +16,10 @@ public class AuthEntrypointJwt implements AuthenticationEntryPoint {
 	public void commence(HttpServletRequest request, HttpServletResponse response,
 			AuthenticationException authException) throws IOException, ServletException{ 
 		
+		        
+		
+		                response.setContentType(null);
+		
 	}
 	
 	}  
