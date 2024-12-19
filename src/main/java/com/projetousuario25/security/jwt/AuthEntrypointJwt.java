@@ -20,7 +20,8 @@ public class AuthEntrypointJwt implements AuthenticationEntryPoint {
 		
 		        
 		
-		                response.setContentType(MediaType.APLICATION_JASON_VALUE);
+		                response.setContentType(MediaType.APLICATION_JSON_VALUE); 
+		                response.setStatus(HttpServletResponse.SC_ANATHORIZED); 
 		
 	}
 	
