@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 import com.projetousuario25.service.UsuarioDetailsImpl;
 
 import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
@@ -50,7 +51,7 @@ public class UsuarioJwtUtils{
 	    		  Jwts.parser().setSigningKey(getSigninkey()).parseClaimsJws(authToken);
 	    		  return true;
 	    	      }catch(MalformedJwtException e) {
-	    	    	  
+	    	    	 System.out.println("Token inválido" + e.getMessage()); 
 	    	      }
 	    	
 	    }
