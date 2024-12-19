@@ -1,6 +1,7 @@
 package com.projetousuario25.security.jwt;
 
 import java.awt.PageAttributes.MediaType;
+import java.util.HashMap;
 
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
@@ -20,9 +21,11 @@ public class AuthEntrypointJwt implements AuthenticationEntryPoint {
 		
 		        
 		
-		                response.setContentType(MediaType.APLICATION_JSON_VALUE); 
-		                response.setStatus(HttpServletResponse.SC_ANATHORIZED); 
-		
+		                response.setContentType(MediaType.APPLICATION_JSON_VALUE); 
+		                response.setStatus(HttpServletResponse.SC_UNAUTHORIZED); 
+		                
+		                final Map<String, object> body = new HashMap<>();
+		              
 	}
 	
 	}  
