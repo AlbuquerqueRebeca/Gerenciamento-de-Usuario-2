@@ -52,6 +52,8 @@ public class UsuarioJwtUtils{
 	    		  return true;
 	    	      }catch(MalformedJwtException e) {
 	    	    	 System.out.println("Token inválido" + e.getMessage()); 
+	    	      }catch(ExpiredJwtException e) { 
+	    	    	  
 	    	      }
 	    	
 	    }
