@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 
 import com.projetousuario25.service.UsuarioDetailsImpl;
 
+import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -53,7 +54,7 @@ public class UsuarioJwtUtils{
 	    	      }catch(MalformedJwtException e) {
 	    	    	 System.out.println("Token inválido" + e.getMessage()); 
 	    	      }catch(ExpiredJwtException e) { 
-	    	    	  
+	    	    	 System.out.println("Token expirado" + e.getMessage());  
 	    	      }
 	    	
 	    }
