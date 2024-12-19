@@ -57,7 +57,9 @@ public class UsuarioJwtUtils{
 	    	      }catch(ExpiredJwtException e) { 
 	    	    	 System.out.println("Token expirado" + e.getMessage());  
 	    	      }catch(UnsupportedJwtException e) { 
-	    	    	  System.out.println("Token nao suportado" + e.getMessage()); 
+	    	    	  System.out.println("Token não suportado" + e.getMessage()); 
+	    	      }catch(IllegalArgumentException e) { 
+	    	    	  
 	    	      }
 	    	    	
 	    	      
