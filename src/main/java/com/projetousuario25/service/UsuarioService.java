@@ -31,6 +31,8 @@ public class UsuarioService{
 	   usuario.setLogin(normalizedLogin);
 	   usuario.setSenha(passwordEncoder.encode(usuario.getSenha())); 
 	   usuarioRepository.save(usuario);
+	   System.out.println("Usuario registrado com sucesso!! " + usuario.getLogin());
+	   
 	   
 	   
 	    
