@@ -56,6 +56,8 @@ public class UsuarioService{
     	}
        
        //Deletar Perfil
-       public void deletarPerfil()
+       public void deletarPerfil(String email) {
+    	   
+       }
 	
 }
