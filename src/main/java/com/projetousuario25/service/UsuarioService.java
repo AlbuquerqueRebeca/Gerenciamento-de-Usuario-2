@@ -16,4 +16,11 @@ public class UsuarioService{
 	private UsuarioRepository usuarioRepository; 
 	
 	
+	//Tratamento de exceçao
+   public void registrandoUsuario(Usuario usuario) {  
+	   
+   }
+   
+	
+	
 }
