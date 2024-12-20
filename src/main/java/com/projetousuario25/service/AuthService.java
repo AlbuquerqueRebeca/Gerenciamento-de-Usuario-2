@@ -16,4 +16,17 @@ public class AuthService{
 	private UsuarioJwtUtils usuarioJwtUtils; 
 	
 	
+	public AcessDto login
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
