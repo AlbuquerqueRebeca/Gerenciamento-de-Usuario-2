@@ -2,6 +2,7 @@ package com.projetousuario25.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.stereotype.Service;
 
 import com.projetousuario25.dto.AuthenticationDto;
@@ -20,6 +21,7 @@ public class AuthService{
 	public AcessDto login(AuthenticationDto authDto) {
 		
 		try {
+			UsernamePasswordAuthenticationToken userAuth = 
 			
 		}
 		
