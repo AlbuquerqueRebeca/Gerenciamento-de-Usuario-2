@@ -26,9 +26,10 @@ public class UsuarioService{
 		   }
 	   
 	    //Codificando senha 
-	   String encodePassword = PasswordEncoder.encode(usuario.getSenha()); 
+	   String encodePassword = passwordEncoder.encode(usuario.getSenha()); 
 	   usuario.setEmail(normalizedEmail);
 	   usuario.setLogin(normalizedLogin);
+	   usuario.setSenha(passwordEncoder.encode(usuario.getSenha())); 
 	   
 	   
 	    
