@@ -1,5 +1,7 @@
 package com.projetousuario25.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -25,7 +27,7 @@ public class UsuarioService{
 		   throw new RuntimeException("Esse email já existe!!");
 		   }
 	   
-	    //Codificando senha 
+	    //Codificando senha / Registro de Usuario 
 	   String encodePassword = passwordEncoder.encode(usuario.getSenha()); 
 	   usuario.setEmail(normalizedEmail);
 	   usuario.setLogin(normalizedLogin);
@@ -33,11 +35,11 @@ public class UsuarioService{
 	   usuarioRepository.save(usuario);
 	   System.out.println("Usuario registrado com sucesso!! " + usuario.getLogin());
 	   
-	   
-	   
-	    
-   }
+	    }
    
+     
+       //Listar todos Usuarios
+      public List<Usuario> 
 	
 	
 }
