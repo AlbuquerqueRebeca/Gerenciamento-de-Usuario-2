@@ -29,7 +29,7 @@ public class AuthFilterToken extends OncePerRequestFilter{
 		    	  String jwt = getToken(request); 
 		    	  if(jwt != null && jwtUtil.validateJwtToken(jwt)) { 
 		    		  
-		    		  String username = 
+		    		  String username = jwtUtil.getUsernameToken(jwt); 
 		    	  }
 		    	  
 		    }
