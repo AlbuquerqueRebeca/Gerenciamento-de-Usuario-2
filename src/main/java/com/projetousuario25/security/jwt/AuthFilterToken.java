@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
@@ -39,6 +40,8 @@ public class AuthFilterToken extends OncePerRequestFilter{
 		    		  UserDetails userDetails = userDetailService.loadUserByUsername(username); 
                       UsernamePasswordAuthenticationToken auth = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
 		    	      auth.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
+		    	      
+		    	      SecurityContextHolder.getContext().setAuthentication(auth);
 		    	  
 		    	  
 		    	  
