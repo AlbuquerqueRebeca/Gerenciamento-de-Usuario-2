@@ -17,7 +17,27 @@ public class AuthService{
 	private UsuarioJwtUtils usuarioJwtUtils; 
 	
 	
-	public AcessDto login(AuthenticationDto authDto)
+	public AcessDto login(AuthenticationDto authDto) {
+		
+		try {
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
 	
 	
 	
