@@ -23,8 +23,13 @@ public class UsuarioService{
 	   String normalizedLogin = usuario.getLogin().toLowerCase();
 	   if(usuarioRepository.existsById(normalizedEmail)) { 
 		   throw new RuntimeException("Esse email já existe!!");
-		   
-	   }
+		   }
+	   
+	    //Codificando senha 
+	   String encodePassWord = 
+	   
+	   
+	    
    }
    
 	
