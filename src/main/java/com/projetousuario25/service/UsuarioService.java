@@ -57,6 +57,7 @@ public class UsuarioService{
        
        //Deletar Perfil
        public void deletarPerfil(String email) {
+    	   usuarioRepository.deleteById();
     	   
        }
 	
