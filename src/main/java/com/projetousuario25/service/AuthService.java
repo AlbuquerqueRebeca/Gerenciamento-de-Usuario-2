@@ -21,7 +21,7 @@ public class AuthService{
 	public AcessDto login(AuthenticationDto authDto) {
 		
 		try {
-			UsernamePasswordAuthenticationToken userAuth = 
+			UsernamePasswordAuthenticationToken userAuth = new UsernamePasswordAuthenticationToken(authDto.getUsername(), authDto.getPassword()); 
 			
 		}
 		
