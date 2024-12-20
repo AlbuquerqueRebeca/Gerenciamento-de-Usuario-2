@@ -37,6 +37,11 @@ public class AuthFilterToken extends OncePerRequestFilter{
 		    		  
 		    		  UserDetails userDetails = userDetailService.loadUserByUsername(username); 
                       UsernamePasswordAuthenticationToken auth = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
+		    	      auth.setDetails();
+		    	  
+		    	  
+		    	  
+		    	  
 		    	  }
 		    	  
 		    }
