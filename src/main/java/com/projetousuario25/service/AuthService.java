@@ -10,5 +10,7 @@ public class AuthService{
 	@Autowired
 	private AuthenticationManager authenticationManager; 
 	
+	@Autowired
+	
 	
 }
