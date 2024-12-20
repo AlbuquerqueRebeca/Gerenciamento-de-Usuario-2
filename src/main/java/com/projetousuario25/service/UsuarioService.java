@@ -30,6 +30,7 @@ public class UsuarioService{
 	   usuario.setEmail(normalizedEmail);
 	   usuario.setLogin(normalizedLogin);
 	   usuario.setSenha(passwordEncoder.encode(usuario.getSenha())); 
+	   usuarioRepository.save(usuario);
 	   
 	   
 	    
