@@ -34,6 +34,8 @@ public class AuthService{
 		     
 		     AcessDto acessDto = new AcessDto(token);
 		     System.out.printl("Autenticação bem sucedida!! " + authDto.getUsername()); 
+		     
+		         return acessDto;
 		
 		
 		
