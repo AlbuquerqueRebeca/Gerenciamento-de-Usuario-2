@@ -29,7 +29,7 @@ public class AuthService{
 		 
 		     UserDetailsImpl userAuthenticate = (UserDetailsImpl) authentication.getPrincipal();
 		
-		
+		     String token = usuarioJwtUtils.generateTokenFromUserDetailsImpl(userAuthenticate);
 		
 		
 		
