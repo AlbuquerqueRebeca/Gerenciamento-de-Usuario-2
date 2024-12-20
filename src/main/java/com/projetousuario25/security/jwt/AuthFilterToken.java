@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import com.projetousuario25.service.UsuarioDetailsServiceImpl;
@@ -33,7 +34,7 @@ public class AuthFilterToken extends OncePerRequestFilter{
 		    		  String username = jwtUtil.getUsernameToekn(jwt);
 		    		  
 		    		  
-		    		  UserDetails userDetails =  
+		    		  UserDetails userDetails = userDetailService.loadUserByUsername(username); 
 
 		    	  }
 		    	  
