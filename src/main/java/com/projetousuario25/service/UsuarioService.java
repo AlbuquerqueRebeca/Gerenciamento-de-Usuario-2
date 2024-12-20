@@ -20,6 +20,7 @@ public class UsuarioService{
 	//Tratamento de exceçao
    public void registrandoUsuario(Usuario usuario) {  
 	   String normalizedEmail = usuario.getEmail().toLowerCase();
+	   String normalizedLogin = 
    }
    
 	
