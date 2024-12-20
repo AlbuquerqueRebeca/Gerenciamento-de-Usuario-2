@@ -1,8 +1,10 @@
 package com.projetousuario25.service;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 
 import com.projetousuario25.dto.AuthenticationDto;
@@ -23,6 +25,7 @@ public class AuthService{
 		try {
 			UsernamePasswordAuthenticationToken userAuth = new UsernamePasswordAuthenticationToken(authDto.getUsername(), authDto.getPassword()); 
 			
+			Authentication authentication = 
 		}
 		
 		
