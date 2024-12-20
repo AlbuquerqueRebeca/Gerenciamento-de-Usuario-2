@@ -7,6 +7,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 
+import com.projetousuario25.dto.AcessDto;
 import com.projetousuario25.dto.AuthenticationDto;
 import com.projetousuario25.security.jwt.UsuarioJwtUtils;
 
@@ -27,9 +28,11 @@ public class AuthService{
 			
 			Authentication authentication = authenticationManager.authenticate(userAuth);
 		 
-		     UserDetailsImpl userAuthenticate = (UserDetailsImpl) authentication.getPrincipal();
+		     UsuarioDetailsImpl userAuthenticate = (UsuarioDetailsImpl) authentication.getPrincipal();
 		
 		     String token = usuarioJwtUtils.generateTokenFromUserDetailsImpl(userAuthenticate);
+		     
+		     AcessDto acessDto = new AcessDto(token); 
 		
 		
 		
