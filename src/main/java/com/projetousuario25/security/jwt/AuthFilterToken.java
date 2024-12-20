@@ -58,7 +58,9 @@ public class AuthFilterToken extends OncePerRequestFilter{
 	 
 	            private String getToken(HttpServletRequest request) { 
 	                    String headerToken = request.getHeader("Authorization");	
-	            	    if(StringUtils.hasText(headerToken))
+	            	    if(StringUtils.hasText(headerToken) && headerToken.startsWith("Bearer")) {
+	            	    	
+	            	    }
 	            }
 	 
 	 
