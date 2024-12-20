@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.stereotype.Service;
 
+import com.projetousuario25.security.jwt.UsuarioJwtUtils;
+
 @Service
 public class AuthService{
 	
@@ -11,6 +13,7 @@ public class AuthService{
 	private AuthenticationManager authenticationManager; 
 	
 	@Autowired
+	private UsuarioJwtUtils usuarioJwtUtils; 
 	
 	
 }
