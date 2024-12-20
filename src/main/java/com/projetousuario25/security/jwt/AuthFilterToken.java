@@ -3,6 +3,7 @@ package com.projetousuario25.security.jwt;
 import java.io.IOException;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import com.projetousuario25.service.UsuarioDetailsServiceImpl;
@@ -29,7 +30,11 @@ public class AuthFilterToken extends OncePerRequestFilter{
 		    	  String jwt = getToken(request); 
 		    	  if(jwt != null && jwtUtil.validateJwtToken(jwt)) { 
 		    		  
-		    		  String username = jwtUtil.getUsernameToken(jwt); 
+		    		  String username = jwtUtil.getUsernameToekn(jwt);
+		    		  
+		    		  
+		    		  UserDetails userDetails =  
+
 		    	  }
 		    	  
 		    }
