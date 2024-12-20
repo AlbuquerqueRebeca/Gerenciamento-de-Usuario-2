@@ -46,6 +46,8 @@ public class UsuarioService{
     }
     
         //Buscando usuario por email
-       public Optional<Usuario> buscandoUsuario
+       public Optional<Usuario> buscandoUsuario(String email){
+    	   
+       }
 	
 }
