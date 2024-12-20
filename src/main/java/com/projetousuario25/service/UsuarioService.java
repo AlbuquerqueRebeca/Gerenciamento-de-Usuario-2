@@ -47,6 +47,7 @@ public class UsuarioService{
     
         //Buscando usuario por email
        public Optional<Usuario> buscandoUsuario(String email){
+    	   return usuarioRepository.findById(email);
     	   
        }
 	
