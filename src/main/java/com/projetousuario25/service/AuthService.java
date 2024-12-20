@@ -3,6 +3,7 @@ package com.projetousuario25.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
@@ -36,10 +37,10 @@ public class AuthService{
 		     System.out.printl("Autenticação bem sucedida!! " + authDto.getUsername()); 
 		     
 		         return acessDto;
-		
-		
-		
-		}
+		    
+		        }catch(BadCredentialsException e) {
+		        	
+		        }
 		
 		
 		
