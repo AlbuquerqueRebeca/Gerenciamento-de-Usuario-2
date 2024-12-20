@@ -1,6 +1,7 @@
 package com.projetousuario25.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -42,8 +43,9 @@ public class UsuarioService{
       public List<Usuario> listandoUsuarios(){
     	  return usuarioRepository.findAll();
     	  
-    	  
-      }
-	
+    }
+    
+        //Buscando usuario por email
+       public Optional<Usuario> 
 	
 }
