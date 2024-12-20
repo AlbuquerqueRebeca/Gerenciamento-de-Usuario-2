@@ -53,7 +53,9 @@ public class UsuarioService{
        //Atualizando perfil de usuario
        public Usuario atualizandoPerfil(Usuario usuario) {
     	   return usuarioRepository.save(usuario);
-    	   
-       }
+    	}
+       
+       //Deletar Perfil
+       public void deletarPerfil()
 	
 }
