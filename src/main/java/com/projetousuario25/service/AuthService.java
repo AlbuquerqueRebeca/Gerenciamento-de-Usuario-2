@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.stereotype.Service;
 
+import com.projetousuario25.dto.AuthenticationDto;
 import com.projetousuario25.security.jwt.UsuarioJwtUtils;
 
 @Service
@@ -16,7 +17,7 @@ public class AuthService{
 	private UsuarioJwtUtils usuarioJwtUtils; 
 	
 	
-	public AcessDto login
+	public AcessDto login(AuthenticationDto authDto)
 	
 	
 	
