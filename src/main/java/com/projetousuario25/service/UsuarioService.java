@@ -26,7 +26,7 @@ public class UsuarioService{
 		   }
 	   
 	    //Codificando senha 
-	   String encodePassWord = 
+	   String encodePassword = PasswordEncoder.encode(usuario.getSenha()); 
 	   
 	   
 	    
