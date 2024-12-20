@@ -51,6 +51,8 @@ public class UsuarioService{
        }
        
        //Atualizando perfil de usuario
-       public Usuario atualizandoPerfil
+       public Usuario atualizandoPerfil(Usuario usuario) {
+    	   
+       }
 	
 }
