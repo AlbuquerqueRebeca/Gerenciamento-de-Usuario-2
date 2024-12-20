@@ -45,7 +45,9 @@ public class AuthFilterToken extends OncePerRequestFilter{
 		    	  
 		    	    }
 		    	  
-		    	  }catch(Exception e) 
+		    	  }catch(Exception e) {
+		    		  System.out.println("Ocorreu um erro ao processo o token");
+		    	  }
 		 
 		 
 		 
