@@ -41,7 +41,30 @@ public class UsuarioDetailsImpl implements UserDetails{
 	}
 	
 	
-	private Collection<? extends GrantedAuthority>
+	private Collection<? extends GrantedAuthority> authorities;
+
+
+
+	@Override
+	public Collection<? extends GrantedAuthority> getAuthorities() {
+		// TODO Auto-generated method stub
+		return authorities;
+	}
+
+	@Override
+	public String getPassword() {
+		// TODO Auto-generated method stub
+		return password;     
+	}
+
+	@Override
+	public String getUsername() {
+		// TODO Auto-generated method stub
+		return username;    
+	} 
+	
+	
+	
 			
 	
 	
