@@ -21,7 +21,9 @@ public class UserRegisterDto {
 		return nome; 
 	}
 	
-	
+	public void setNome() { 
+		
+	}
 	
 	
 	
