@@ -11,6 +11,9 @@ public class UsuarioDetailsImpl implements UserDetails{
 	private String password; 
 	
 	
+	public UsuarioDetailsImpl()
+	
+	
 	
 	
 }
