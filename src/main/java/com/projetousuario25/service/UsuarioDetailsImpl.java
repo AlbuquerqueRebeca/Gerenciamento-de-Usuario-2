@@ -38,9 +38,10 @@ public class UsuarioDetailsImpl implements UserDetails{
 				   usuario.getLogin(), 
 				   usuario.getSenha(), 
 				   new ArrayList<>());  
-		
 	}
-			
+	
+	
+	private Collection<? extends GrantedAuthority>
 			
 	
 	
