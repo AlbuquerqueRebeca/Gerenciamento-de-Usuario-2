@@ -5,6 +5,8 @@ import java.util.Collection;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import com.projetousuario25.entidade.Usuario;
+
 public class UsuarioDetailsImpl implements UserDetails{ 
 	
 	
@@ -26,6 +28,12 @@ public class UsuarioDetailsImpl implements UserDetails{
 		this.authorities = authorities; 
 		
 	}
+	
+	public static UsuarioDetailsImpl build(Usuario usuario) { 
+		
+	}
+			
+			
 	
 	
 	
