@@ -14,6 +14,7 @@ public class AuthenticationDto {
 	}
 	
 	 public void setUsername() { 
+		 this.username = username; 
 		 
 	 }
 	
