@@ -1,6 +1,10 @@
 package com.projetousuario25.service;
 
-public class UsuarioDetailsImpl{
+import org.springframework.security.core.userdetails.UserDetails;
+
+public class UsuarioDetailsImpl implements UserDetails{ 
+	
+	
 	
 	
 }
