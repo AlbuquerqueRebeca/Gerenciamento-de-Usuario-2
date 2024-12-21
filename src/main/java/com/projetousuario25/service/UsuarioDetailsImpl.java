@@ -1,5 +1,6 @@
 package com.projetousuario25.service;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 import org.springframework.security.core.GrantedAuthority;
@@ -35,7 +36,8 @@ public class UsuarioDetailsImpl implements UserDetails{
 				   usuario.getEmail(), 
 				   usuario.getNome(), 
 				   usuario.getLogin(), 
-				   usuario.getSenha(), null)  
+				   usuario.getSenha(), 
+				   new ArrayList<>());  
 		
 	}
 			
