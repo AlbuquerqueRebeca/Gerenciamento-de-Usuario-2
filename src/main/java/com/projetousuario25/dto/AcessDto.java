@@ -15,7 +15,9 @@ public class AcessDto {
 		  
 	  }
 	
-	
+	  public String getToken() { 
+		  
+	  }
 	
 	
 	  
