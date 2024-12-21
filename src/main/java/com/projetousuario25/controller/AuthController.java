@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.projetousuario25.service.AuthService;
+import com.projetousuario25.service.UsuarioService;
 
 @RestController 
 @RequestMapping("/auth") 
@@ -15,6 +16,7 @@ public class AuthController{
     private AuthService authService; 
 	
 	@Autowired
+	private UsuarioService usuarioService; 
 	
 	
 }
