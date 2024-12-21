@@ -13,4 +13,8 @@ public class AuthenticationDto {
 		
 	}
 	
+	 public void setUsername() { 
+		 
+	 }
+	
 }
