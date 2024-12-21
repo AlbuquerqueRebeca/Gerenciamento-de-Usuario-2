@@ -38,6 +38,10 @@ public class UserRegisterDto {
 		return senha; 
 	}
 	
+	public void  setSenha() { 
+		
+	}
+	
 	
 	
 }
