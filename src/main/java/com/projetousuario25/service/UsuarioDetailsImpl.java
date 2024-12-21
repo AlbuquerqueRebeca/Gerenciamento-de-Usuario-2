@@ -11,7 +11,7 @@ public class UsuarioDetailsImpl implements UserDetails{
 	private String password; 
 	
 	
-	public UsuarioDetailsImpl(String email, String nome)
+	public UsuarioDetailsImpl(String email, String nome, String username,)
 	
 	
 	
