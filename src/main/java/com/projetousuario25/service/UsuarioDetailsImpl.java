@@ -20,6 +20,7 @@ public class UsuarioDetailsImpl implements UserDetails{
 	 
 		super(); 
 		This.email = email;
+		this.nome = nome; 
 		
 	}
 	
