@@ -33,7 +33,8 @@ public class UsuarioDetailsImpl implements UserDetails{
 		
 		   return new UsuarioDetailsImpl(
 				   usuario.getEmail(), 
-				   usuario.getNome(), null, null, null)  
+				   usuario.getNome(), 
+				   usuario.getLogin(), null, null)  
 		
 	}
 			
