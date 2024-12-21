@@ -35,7 +35,7 @@ public class UserRegisterDto {
 	}
 	
 	public String getSenha() { 
-		
+		return senha; 
 	}
 	
 	
