@@ -20,7 +20,7 @@ public class AcessDto {
 		  
 	  }
 	
-	
+	 public void setToken()
 	  
 	  
 	  
