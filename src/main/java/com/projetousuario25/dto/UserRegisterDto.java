@@ -30,6 +30,10 @@ public class UserRegisterDto {
 		 
 	}
 	
+	public void setLogin() { 
+		
+	}
+	
 	
 	
 }
