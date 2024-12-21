@@ -14,7 +14,7 @@ public class UserRegisterDto {
 	}
 	
 	public void setEmail() { 
-		
+		this.email = email; 
 	}
 	
 	
