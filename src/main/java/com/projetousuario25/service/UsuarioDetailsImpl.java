@@ -19,10 +19,11 @@ public class UsuarioDetailsImpl implements UserDetails{
 	Collection<? extends GrantedAuthority> authorities) { 
 	 
 		super(); 
-		This.email = email;
+		this.email = email;
 		this.nome = nome; 
 		this.username = username; 
 		this.password = password; 
+		this.authorities = authorities; 
 		
 	}
 	
