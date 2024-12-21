@@ -31,7 +31,8 @@ public class UsuarioDetailsImpl implements UserDetails{
 	
 	public static UsuarioDetailsImpl build(Usuario usuario) { 
 		
-		   return new UsuarioDetailsImpl(null, null, null, null, null) 
+		   return new UsuarioDetailsImpl(
+				   usuario.getEmail(), null, null, null, null)  
 		
 	}
 			
