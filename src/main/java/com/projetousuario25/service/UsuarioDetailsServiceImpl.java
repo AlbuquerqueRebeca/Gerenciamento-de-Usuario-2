@@ -6,12 +6,14 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
 import com.projetousuario25.entidade.Usuario;
+import com.projetousuario25.repositorio.UsuarioRepository;
 
 
 public class UsuarioDetailsServiceImpl implements UserDetailsService{
 
 	
 	  @Autowired 
+	  private UsuarioRepository usuarioRepository;
 	  
 	
 	
