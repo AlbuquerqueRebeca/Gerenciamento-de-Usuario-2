@@ -24,6 +24,7 @@ public class AuthenticationDto {
 	 }
 	 
 	 public void setPassword() {  
+		 this.password = password; 
 		 
 	 }
 	
