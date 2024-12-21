@@ -7,6 +7,7 @@ public class UsuarioDetailsImpl implements UserDetails{
 	
 	private String email; 
 	private String nome; 
+	private String username;
 	
 	
 	
