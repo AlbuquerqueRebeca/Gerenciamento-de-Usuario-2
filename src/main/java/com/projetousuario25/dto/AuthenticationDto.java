@@ -22,5 +22,9 @@ public class AuthenticationDto {
 		 return password; 
 		 
 	 }
+	 
+	 public void setPassword() {  
+		 
+	 }
 	
 }
