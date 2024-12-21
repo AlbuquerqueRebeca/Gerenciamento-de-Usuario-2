@@ -9,7 +9,9 @@ public class AcessDto {
 	  private String token;  
 	  
 	  
-	  public AcessDto() 
+	  public AcessDto(String token) { 
+		  
+	  }
 	
 	
 	
