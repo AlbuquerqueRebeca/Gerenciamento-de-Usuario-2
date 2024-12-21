@@ -9,6 +9,11 @@ public class UserRegisterDto {
 	public String senha; 
 	
 	
+	public String getEmail() { 
+		
+	}
+	
+	
 	
 	
 	
