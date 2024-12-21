@@ -20,7 +20,7 @@ public class AuthController{
 	private UsuarioService usuarioService; 
 	
 	
-	@PostMapping 
+	@PostMapping(value = "/login") 
 	
 	
 }
