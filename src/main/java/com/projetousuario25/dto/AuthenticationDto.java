@@ -17,5 +17,9 @@ public class AuthenticationDto {
 		 this.username = username; 
 		 
 	 }
+	 
+	 public String getPassword() { 
+		 
+	 }
 	
 }
