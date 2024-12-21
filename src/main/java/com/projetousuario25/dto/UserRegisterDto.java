@@ -13,7 +13,9 @@ public class UserRegisterDto {
 		return email; 
 	}
 	
-	
+	public void setEmail() { 
+		
+	}
 	
 	
 	
