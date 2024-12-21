@@ -19,6 +19,7 @@ public class UsuarioDetailsImpl implements UserDetails{
 	Collection<? extends GrantedAuthority> authorities) { 
 	 
 		super(); 
+		This.email = email;
 		
 	}
 	
