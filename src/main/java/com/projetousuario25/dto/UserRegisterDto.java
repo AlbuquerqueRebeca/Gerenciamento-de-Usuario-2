@@ -17,7 +17,9 @@ public class UserRegisterDto {
 		this.email = email; 
 	}
 	
-	
+	public String getNome() { 
+		
+	}
 	
 	
 	
