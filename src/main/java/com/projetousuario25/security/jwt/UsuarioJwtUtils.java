@@ -35,11 +35,12 @@ public class UsuarioJwtUtils{
 		
 		  return Jwts.builder().setSubject(userDetail.getUsername()) 
 				               .setIssuedAt(new Date())
-				               .signWith(getSigninkey(), SignatureAlgorithm.HS512).compact();
+				               .signWith(getSigninKey(), SignatureAlgorithm.HS512).compact();
 	}
 	
 	public Key  getSigninKey() { 
-	SecretKey key = Keys.hmacShaKeyFor(Decoders.BASE64.decode(jwtSecret)); 	
+	SecretKey key = Keys.hmacShaKeyFor(Decoders.BASE64.decode(jwtSecret));
+	   return key; 
 	}
 	
 	public String getUsernameToken(String token) { 
@@ -50,7 +51,7 @@ public class UsuarioJwtUtils{
 	    public boolean validateJwtToken(String authToken) { 
 	    	try {
 	    		 
-	    		  Jwts.parser().setSigningKey(getSigninkey()).parseClaimsJws(authToken);
+	    		  Jwts.parser().setSigningKey(getSigninKey()).parseClaimsJws(authToken);
 	    		  return true;
 	    	      }catch(MalformedJwtException e) {
 	    	    	 System.out.println("Token inválido" + e.getMessage()); 
@@ -59,7 +60,7 @@ public class UsuarioJwtUtils{
 	    	      }catch(UnsupportedJwtException e) { 
 	    	    	  System.out.println("Token não suportado" + e.getMessage()); 
 	    	      }catch(IllegalArgumentException e) { 
-	    	    	  System.out.println("Token argumento inválido" e.getMessage()); 
+	    	    	  System.out.println("Token argumento inválido" + e.getMessage()); 
 	    	      }
 	    	    	
 	    	      return false; 

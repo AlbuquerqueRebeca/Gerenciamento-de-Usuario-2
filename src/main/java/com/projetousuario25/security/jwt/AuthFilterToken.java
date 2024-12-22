@@ -22,7 +22,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class AuthFilterToken extends OncePerRequestFilter{ 
 	 
 	 @Autowired 
-	 private UsuarioJwtUtils usuarioJwtUtils; 
+	 private UsuarioJwtUtils jwtUtil; 
 	 
 	 @Autowired
 	 private UsuarioDetailsServiceImpl userDetailService;
@@ -35,7 +35,7 @@ public class AuthFilterToken extends OncePerRequestFilter{
 		    	  String jwt = getToken(request); 
 		    	  if(jwt != null && jwtUtil.validateJwtToken(jwt)) { 
 		    		  
-		    		  String username = jwtUtil.getUsernameToekn(jwt);
+		    		  String username = jwtUtil.getUsernameToken(jwt);
 		    		  
 		    		  
 		    		  UserDetails userDetails = userDetailService.loadUserByUsername(username); 
@@ -47,7 +47,7 @@ public class AuthFilterToken extends OncePerRequestFilter{
 		    	    }
 		    	  
 		    	  }catch(Exception e) {
-		    		  System.out.println("Ocorreu um erro ao processo o token");
+		    		  System.out.println("Ocorreu um erro ao processar o token");
 		    	  }finally {
 		    		  
 		    	  }

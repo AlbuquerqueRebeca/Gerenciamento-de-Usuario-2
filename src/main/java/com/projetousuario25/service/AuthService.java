@@ -34,7 +34,7 @@ public class AuthService{
 		     String token = usuarioJwtUtils.generateTokenFromUserDetailsImpl(userAuthenticate);
 		     
 		     AcessDto acessDto = new AcessDto(token);
-		     System.out.printl("Autenticação bem sucedida!! " + authDto.getUsername()); 
+		     System.out.println("Autenticação bem sucedida!! " + authDto.getUsername()); 
 		     
 		         return acessDto;
 		    
