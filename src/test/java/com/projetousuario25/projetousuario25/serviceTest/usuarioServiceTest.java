@@ -18,6 +18,9 @@ public class usuarioServiceTest {
 	
 	
 	@Test
+	void salvandoUsuario() { 
+		
+	}
 	
 	
 
