@@ -46,6 +46,7 @@ public class usuarioServiceTest {
 	
 	@Test
 	void buscandoUsuario() { 
+	String email = 	
 		
 	}
 	
