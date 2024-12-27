@@ -44,10 +44,11 @@ public class usuarioServiceTest {
 		
 	}
 	
+	//Buscando usuario por email
 	@Test
 	void buscandoUsuario() { 
 	String email = "Rafaella-Floriano@hotmail.com";
-	Optional<Usuario>
+	Optional<Usuario> usuario = usuarioService.buscandoUsuario(email); 
 		
 	}
 	
