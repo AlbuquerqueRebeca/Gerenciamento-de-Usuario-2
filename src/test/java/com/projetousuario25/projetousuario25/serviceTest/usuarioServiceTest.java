@@ -1,5 +1,7 @@
 package com.projetousuario25.projetousuario25.serviceTest;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -29,6 +31,8 @@ public class usuarioServiceTest {
 	
 	
 	usuarioService.registrandoUsuario(usuario); 
+	
+	assertEquals();
 		
 	}
 	
