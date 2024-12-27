@@ -21,6 +21,7 @@ public class usuarioServiceTest {
 	@Test
 	void salvandoUsuario() { 
 	Usuario usuario = new Usuario(); 	
+	usuario.setEmail();
 		
 	}
 	
