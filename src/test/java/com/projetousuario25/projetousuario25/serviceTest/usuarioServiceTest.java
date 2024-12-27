@@ -37,7 +37,7 @@ public class usuarioServiceTest {
 	assertEquals("Rafaella Floriano", usuario.getNome(), "Nome de usuario salvo com sucesso!!");
 	assertEquals("Rafaella", usuario.getLogin(), "Login salvo com sucesso!!"); 
 	
-	assertTrue(false);
+	assertTrue(passwordEncoder.matches("24294", usuario.getSenha()));
 
 		
 	}
