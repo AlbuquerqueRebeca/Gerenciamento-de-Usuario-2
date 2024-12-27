@@ -32,7 +32,7 @@ public class usuarioServiceTest {
 	
 	usuarioService.registrandoUsuario(usuario); 
 	
-	assertEquals();
+	assertEquals("Rafaella-Floriano@hotmail.com", usuario.getEmail(), "Email salvo com sucesso!!");
 		
 	}
 	
