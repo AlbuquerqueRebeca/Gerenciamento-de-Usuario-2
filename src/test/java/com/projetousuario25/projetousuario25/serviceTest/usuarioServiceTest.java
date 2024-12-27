@@ -33,6 +33,8 @@ public class usuarioServiceTest {
 	usuarioService.registrandoUsuario(usuario); 
 	
 	assertEquals("Rafaella-Floriano@hotmail.com", usuario.getEmail(), "Email salvo com sucesso!!");
+	assertEquals("Rafaella Floriano", usuario.getNome(), "Nome de usuario salvo com sucesso!!");
+
 		
 	}
 	
