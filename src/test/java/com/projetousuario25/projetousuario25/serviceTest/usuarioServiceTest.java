@@ -49,6 +49,7 @@ public class usuarioServiceTest {
 	void buscandoUsuario() { 
 	String email = "Rafaella-Floriano@hotmail.com";
 	Optional<Usuario> usuario = usuarioService.buscandoUsuario(email); 
+	assertTrue(false);
 		
 	}
 	
