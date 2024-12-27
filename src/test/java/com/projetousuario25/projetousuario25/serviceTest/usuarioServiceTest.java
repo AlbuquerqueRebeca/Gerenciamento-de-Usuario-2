@@ -18,13 +18,14 @@ public class usuarioServiceTest {
 	private PasswordEncoder passwordEncoder; 
 	
 	
+	//Registrando usuario
 	@Test
 	void salvandoUsuario() { 
 	Usuario usuario = new Usuario(); 	
 	usuario.setEmail("Rafaella-Floriano@hotmail.com"); 
 	usuario.setNome("Rafaella Floriano"); 
 	usuario.setLogin("Rafaella"); 
-	usuario.setSenha(null);
+	usuario.setSenha("24294"); 
 		
 	}
 	
