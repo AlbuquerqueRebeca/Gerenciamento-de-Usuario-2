@@ -45,6 +45,9 @@ public class usuarioServiceTest {
 	}
 	
 	@Test
+	void buscandoUsuario() { 
+		
+	}
 	
 	
 
