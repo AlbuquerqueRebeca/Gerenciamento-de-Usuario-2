@@ -46,7 +46,8 @@ public class usuarioServiceTest {
 	
 	@Test
 	void buscandoUsuario() { 
-	String email = "Rafaella-Floriano@hotmail.com";	
+	String email = "Rafaella-Floriano@hotmail.com";
+	Optional<Usuario>
 		
 	}
 	
