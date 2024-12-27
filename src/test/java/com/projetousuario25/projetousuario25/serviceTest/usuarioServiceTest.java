@@ -22,7 +22,8 @@ public class usuarioServiceTest {
 	void salvandoUsuario() { 
 	Usuario usuario = new Usuario(); 	
 	usuario.setEmail("Rafaella-Floriano@hotmail.com"); 
-	usuario.getNome("Rafaella Floriano");  
+	usuario.getNome("Rafaella Floriano"); 
+	usuario.getLogin()
 		
 	}
 	
