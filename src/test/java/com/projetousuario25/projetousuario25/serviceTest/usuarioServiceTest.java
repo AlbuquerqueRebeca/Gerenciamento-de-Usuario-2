@@ -34,6 +34,7 @@ public class usuarioServiceTest {
 	
 	assertEquals("Rafaella-Floriano@hotmail.com", usuario.getEmail(), "Email salvo com sucesso!!");
 	assertEquals("Rafaella Floriano", usuario.getNome(), "Nome de usuario salvo com sucesso!!");
+	assertEquals("Rafaella", usuario.getLogin(), "Login salvo com sucesso!!"); 
 
 		
 	}
