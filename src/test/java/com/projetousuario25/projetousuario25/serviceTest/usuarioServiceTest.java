@@ -1,6 +1,7 @@
 package com.projetousuario25.projetousuario25.serviceTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,6 +36,8 @@ public class usuarioServiceTest {
 	assertEquals("Rafaella-Floriano@hotmail.com", usuario.getEmail(), "Email salvo com sucesso!!");
 	assertEquals("Rafaella Floriano", usuario.getNome(), "Nome de usuario salvo com sucesso!!");
 	assertEquals("Rafaella", usuario.getLogin(), "Login salvo com sucesso!!"); 
+	
+	assertTrue(false);
 
 		
 	}
