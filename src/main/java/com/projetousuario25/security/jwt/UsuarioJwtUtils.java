@@ -32,7 +32,7 @@ public class UsuarioJwtUtils{
 	
 	
 	public String generateTokenFromUserDetailsImpl(UsuarioDetailsImpl userDetail) {
-		
+		 System.out.println("gerando token para usuario" + userDetail.getUsername());
 		  return Jwts.builder().setSubject(userDetail.getUsername()) 
 				               .setIssuedAt(new Date())
 				               .signWith(getSigninKey(), SignatureAlgorithm.HS512).compact();
@@ -40,17 +40,19 @@ public class UsuarioJwtUtils{
 	
 	public Key  getSigninKey() { 
 	SecretKey key = Keys.hmacShaKeyFor(Decoders.BASE64.decode(jwtSecret));
+	 System.out.println("chave de assinatura gerada");
 	   return key; 
 	}
 	
 	public String getUsernameToken(String token) { 
+		System.out.println("extraindo username do token" + token);
 		return Jwts.parser().setSigningKey(getSigninKey())
 			       .parseClaimsJws(token).getBody().getSubject(); 	
 		}
-	
+	 
 	    public boolean validateJwtToken(String authToken) { 
 	    	try {
-	    		 
+	    		 System.out.println("validando token" + authToken);
 	    		  Jwts.parser().setSigningKey(getSigninKey()).parseClaimsJws(authToken);
 	    		  return true;
 	    	      }catch(MalformedJwtException e) {

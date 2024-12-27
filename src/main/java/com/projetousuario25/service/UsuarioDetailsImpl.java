@@ -25,7 +25,7 @@ public class UsuarioDetailsImpl implements UserDetails{
 		this.email = email;
 		this.nome = nome; 
 		this.username = username; 
-		this.password = password; 
+		this.password = password;     
 		this.authorities = authorities; 
 		
 	}
