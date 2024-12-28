@@ -57,7 +57,7 @@ public class usuarioServiceTest {
 	
 	@Test
 	void atualizandoPerfil() { 
-	Usuario usuario = 	
+	Usuario usuario = new Usuario();	
 		
 	}
 	
