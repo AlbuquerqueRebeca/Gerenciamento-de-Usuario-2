@@ -66,6 +66,8 @@ public class usuarioServiceTest {
 	usuario.setLogin("Rafaella");
 	
 	usuarioService.atualizandoPerfil(usuario); 
+	
+	Usuario perfilAtualizado = 
 		
 	}
 	
