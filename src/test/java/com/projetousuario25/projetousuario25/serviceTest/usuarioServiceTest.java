@@ -61,7 +61,9 @@ public class usuarioServiceTest {
 	usuario.setEmail("Rafaella-Floriano@hotmail.com"); 
 	usuario.setNome("Rafaella Floriano"); 
 	usuario.setLogin("Rafaella"); 
-	usuario.setSenha("24294");  
+	usuario.setSenha("24294"); 
+	
+	usuario.setLogin(); 
 		
 	}
 	
