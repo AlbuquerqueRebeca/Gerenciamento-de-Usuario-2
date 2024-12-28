@@ -70,7 +70,7 @@ public class usuarioServiceTest {
 	Usuario perfilAtualizado = usuarioService.buscandoUsuario("Rafaella-Floriano@hotmail.com")
 			.orElseThrow(() -> new RuntimeException("Usuario não encontrado"); 
 			
-			assertEquals("Rafaella", , null) 
+			assertEquals("Rafaella", perfilAtualizado.getLogin() , null) 
 		
 	}
 	
