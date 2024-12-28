@@ -68,9 +68,9 @@ public class usuarioServiceTest {
 	usuarioService.atualizandoPerfil(usuario); 
 	
 	Usuario perfilAtualizado = usuarioService.buscandoUsuario("Rafaella-Floriano@hotmail.com")
-			.orElseThrow(() -> new RuntimeException("Usuario não encontrado"); 
+			.orElseThrow(() -> new RuntimeException("Usuario não encontrado")); 
 			
-			assertEquals("Rafaella", perfilAtualizado.getLogin() , null) 
+			assertEquals("Rafaella", perfilAtualizado.getLogin() , "Login atualizado com sucesso!!"); 
 		
 	}
 	
