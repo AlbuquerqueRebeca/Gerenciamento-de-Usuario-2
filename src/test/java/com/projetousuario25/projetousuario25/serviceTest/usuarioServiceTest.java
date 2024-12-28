@@ -53,6 +53,28 @@ public class usuarioServiceTest {
 		
 	}
 	
+	//Atualizando perfil de usuario
+	
+	@Test
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 
 }
