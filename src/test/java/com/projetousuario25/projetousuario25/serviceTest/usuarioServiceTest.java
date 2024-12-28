@@ -67,7 +67,7 @@ public class usuarioServiceTest {
 	
 	usuarioService.atualizandoPerfil(usuario); 
 	
-	Usuario perfilAtualizado = usuarioService.buscandoUsuario(null)
+	Usuario perfilAtualizado = usuarioService.buscandoUsuario("Rafaella-Floriano@hotmail.com")
 		
 	}
 	
