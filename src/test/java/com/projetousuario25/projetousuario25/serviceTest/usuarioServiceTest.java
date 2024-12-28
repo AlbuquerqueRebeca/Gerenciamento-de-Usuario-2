@@ -63,7 +63,9 @@ public class usuarioServiceTest {
 	usuario.setLogin("Rafaella"); 
 	usuario.setSenha("24294"); 
 	
-	usuario.setLogin("Rafaella"); 
+	usuario.setLogin("Rafaella");
+	
+	usuarioService.atualizandoPerfil(usuario); 
 		
 	}
 	
