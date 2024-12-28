@@ -71,6 +71,7 @@ public class usuarioServiceTest {
 			.orElseThrow(() -> new RuntimeException("Usuario não encontrado")); 
 			
 			assertEquals("Rafaella", perfilAtualizado.getLogin() , "Login atualizado com sucesso!!"); 
+			System.out.println("Perfil atualizado com sucesso!!!!!");
 		
 	}
 	
