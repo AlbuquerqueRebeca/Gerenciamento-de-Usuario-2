@@ -59,7 +59,7 @@ public class usuarioServiceTest {
 	void atualizandoPerfil() { 
 	Usuario usuario = new Usuario();
 	usuario.setEmail("Rafaella-Floriano@hotmail.com"); 
-	usuario.setNome(null);
+	usuario.setNome("Rafaella Floriano"); 
 		
 	}
 	
