@@ -58,7 +58,7 @@ public class usuarioServiceTest {
 	@Test
 	void atualizandoPerfil() { 
 	Usuario usuario = new Usuario();
-	usuario.setEmail(null);
+	usuario.setEmail("Rafaella-Floriano@hotmail.com"); 
 		
 	}
 	
