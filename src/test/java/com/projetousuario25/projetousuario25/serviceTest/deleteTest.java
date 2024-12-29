@@ -25,7 +25,7 @@ public class deleteTest {
 	 Usuario usuario = new Usuario();
 	 usuario.setEmail("Rafaella-Floriano@hotmail.com"); 
 	 usuario.setNome("Rafaella Floriano"); 
-	 usuario.setLogin(null);
+	 usuario.setLogin("Rafaella"); 
 		 
 	 }
 	
