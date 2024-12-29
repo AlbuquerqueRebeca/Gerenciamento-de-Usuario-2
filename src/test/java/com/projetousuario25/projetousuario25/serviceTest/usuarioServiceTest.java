@@ -83,7 +83,7 @@ public class usuarioServiceTest {
 	   usuario.setEmail("Rafaella-Floriano@hotmail.com"); 
 	   usuario.setNome("Rafaella Floriano");
 	   usuario.setLogin("Rafaella"); 
-	   usuario.setSenha(null);
+	   usuario.setSenha("24294"); 
 	   
 		   
 		   
