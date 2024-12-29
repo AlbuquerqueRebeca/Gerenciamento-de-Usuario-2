@@ -18,6 +18,9 @@ public class deleteTest {
 	
 	 @Autowired 
 	 private UsuarioService usuarioService;
+	 
+	 
+	 @Test
 	
 	
 	
