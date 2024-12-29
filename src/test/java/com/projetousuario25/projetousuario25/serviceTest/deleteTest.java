@@ -23,7 +23,7 @@ public class deleteTest {
 	 @Test
 	 void deletandoPerfil() { 
 	 Usuario usuario = new Usuario();
-	 usuario.setEmail(null);
+	 usuario.setEmail("Rafaella-Floriano@hotmail.com"); 
 		 
 	 }
 	
