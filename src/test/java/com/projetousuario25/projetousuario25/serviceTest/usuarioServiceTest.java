@@ -80,7 +80,8 @@ public class usuarioServiceTest {
 	   @Test 
 	   void deletandoPerfil() { 
 	   Usuario usuario = new Usuario();
-	   usuario.setEmail();
+	   usuario.setEmail("Rafaella-Floriano@hotmail.com"); 
+	   
 		   
 		   
 	   }
