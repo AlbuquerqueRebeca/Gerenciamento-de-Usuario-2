@@ -1,6 +1,7 @@
 package com.projetousuario25.projetousuario25.serviceTest;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.Optional;
@@ -75,11 +76,8 @@ public class usuarioServiceTest {
 		
 	}
 	
-	
-	
-	
-	
-	
+	  
+	   @Test 
 	
 	
 	

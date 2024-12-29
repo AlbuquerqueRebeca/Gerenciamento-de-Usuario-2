@@ -57,7 +57,9 @@ public class UsuarioService{
        
        //Deletar Perfil
        public void deletarPerfil(String email) {
+    	   System.out.println("Tentando deletar o perfil com email" + email);
     	   usuarioRepository.deleteById(email);
+    	   System.out.println("Perfil deletado com sucesso" + email); 
     	   
        }
 	
