@@ -31,7 +31,7 @@ public class deleteTest {
 	 
 	 usuarioService.buscandoUsuario(usuario.getEmail()); 
 	 
-	 Optional<Usuario>
+	 Optional<Usuario> deletarUsuario = 
 		 
 	 }
 	
