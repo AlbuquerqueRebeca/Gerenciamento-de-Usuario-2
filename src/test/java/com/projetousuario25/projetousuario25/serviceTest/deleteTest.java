@@ -29,7 +29,7 @@ public class deleteTest {
 	 usuario.setSenha("24294");
 	 
 	 
-	 usuarioService.buscandoUsuario(null)
+	 usuarioService.buscandoUsuario(usuario.getEmail()); 
 		 
 	 }
 	
