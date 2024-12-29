@@ -87,7 +87,7 @@ public class usuarioServiceTest {
 	   
 	   usuarioService.buscandoUsuario(usuario.getEmail()); 
 	   
-	   Optional<Usuario> deletarPerfil = usuarioService.buscandoUsuario(null)
+	   Optional<Usuario> deletarPerfil = usuarioService.buscandoUsuario(usuario.getEmail());
 	   
 		   
 		   
