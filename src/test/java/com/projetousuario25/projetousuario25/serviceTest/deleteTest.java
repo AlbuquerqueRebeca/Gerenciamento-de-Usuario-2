@@ -23,7 +23,7 @@ public class deleteTest {
 	@Test
 	void deletandoPerfil() {
 		System.out.println("iniciando teste'");
-		Usuario usuario = new Usuario(); // Inicializa um objeto Usuario para criar e depois deletar Usuario usuario = new Usuario();
+		Usuario usuario = new Usuario(); 
 		 usuario.setEmail("Rafaella-Floriano@hotmail.com");
 		 usuario.setNome("Rafaella Floriano");
 		 usuario.setLogin("Rafaella");

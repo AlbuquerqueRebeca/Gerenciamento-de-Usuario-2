@@ -77,22 +77,7 @@ public class usuarioServiceTest {
 	}
 	
 	  
-	   @Test 
-	   void deletandoPerfil() { 
-	   Usuario usuario = new Usuario();
-	   usuario.setEmail("Rafaella-Floriano@hotmail.com"); 
-	   usuario.setNome("Rafaella Floriano");
-	   usuario.setLogin("Rafaella"); 
-	   usuario.setSenha("24294"); 
 	   
-	   usuarioService.buscandoUsuario(usuario.getEmail()); 
-	   
-	   Optional<Usuario> deletarPerfil = usuarioService.buscandoUsuario(usuario.getEmail());
-	   assertTrue(deletarPerfil.isEmpty(), "Perfil deletado com sucesso!!"); 
-	   
-		   System.out.println("Perfil deletado com sucesso!!!"); 
-		   
-	   }
 	
 	
 	
