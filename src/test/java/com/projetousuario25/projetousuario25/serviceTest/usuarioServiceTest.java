@@ -88,9 +88,9 @@ public class usuarioServiceTest {
 	   usuarioService.buscandoUsuario(usuario.getEmail()); 
 	   
 	   Optional<Usuario> deletarPerfil = usuarioService.buscandoUsuario(usuario.getEmail());
-	   assertTrue(deletarPerfil.isEmpty());
+	   assertTrue(deletarPerfil.isEmpty(), "Perfil deletado com sucesso!!"); 
 	   
-		   
+		   System.out.println("Perfil deletado com sucesso!!!"); 
 		   
 	   }
 	
