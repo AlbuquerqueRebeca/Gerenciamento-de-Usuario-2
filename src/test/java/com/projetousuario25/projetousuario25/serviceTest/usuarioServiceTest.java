@@ -78,6 +78,9 @@ public class usuarioServiceTest {
 	
 	  
 	   @Test 
+	   void deletandoPerfil() { 
+		   
+	   }
 	
 	
 	
