@@ -27,6 +27,9 @@ public class deleteTest {
 	 usuario.setNome("Rafaella Floriano"); 
 	 usuario.setLogin("Rafaella"); 
 	 usuario.setSenha("24294");
+	 
+	 
+	 usuarioService.buscandoUsuario(null)
 		 
 	 }
 	
