@@ -79,7 +79,7 @@ public class usuarioServiceTest {
 	  
 	   @Test 
 	   void deletandoPerfil() { 
-	   Usuario usuario = 	   
+	   Usuario usuario = new Usuario();	   
 		   
 		   
 	   }
