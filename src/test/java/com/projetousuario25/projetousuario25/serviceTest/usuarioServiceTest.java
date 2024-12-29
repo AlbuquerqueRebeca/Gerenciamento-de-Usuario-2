@@ -79,7 +79,8 @@ public class usuarioServiceTest {
 	  
 	   @Test 
 	   void deletandoPerfil() { 
-	   Usuario usuario = new Usuario();	   
+	   Usuario usuario = new Usuario();
+	   usuario.setEmail();
 		   
 		   
 	   }
