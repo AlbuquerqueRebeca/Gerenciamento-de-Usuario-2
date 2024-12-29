@@ -24,6 +24,7 @@ public class deleteTest {
 	 void deletandoPerfil() { 
 	 Usuario usuario = new Usuario();
 	 usuario.setEmail("Rafaella-Floriano@hotmail.com"); 
+	 usuario.setNome(null);
 		 
 	 }
 	
