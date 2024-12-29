@@ -22,7 +22,7 @@ public class deleteTest {
 	 
 	 @Test
 	 void deletandoPerfil() { 
-	 Usuario usuario = 	 
+	 Usuario usuario = new Usuario();	 
 		 
 	 }
 	
