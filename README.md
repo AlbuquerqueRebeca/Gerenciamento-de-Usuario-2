@@ -42,6 +42,20 @@ A API é protegida por JWT (JSON Web Tokens) para garantir que somente usuários
 3- Clique no link de download ao lado da versão do sistema operacional.
 4- Aceite o acordo de licença e siga as instruções
 
+#### SPRING BOOT
+1- Visite o site Spring Initializr
+2- Configure seu projeto (escolha a versão do Spring Boot, nome do projeto, dependências, etc.)
+3- Clique em "Generate" para baixar o projeto
+4- Extraia o arquivo baixado e importe o projeto para a sua IDE
+
+#### MSQL
+1- Visite o site oficial do MySQL  https://www.mysql.com/
+2- Clique em "Download" e escolha a versão apropriada para o seu sistema operacional
+3- Siga as instruções na tela para instalar o MySQL
+4- Configure um banco de dados e usuário para seu projeto
+
+
+
 #### MAVEN
 1- Visite o Site
 2- Na seção “Apache Maven”, escolha a versão do Maven que corresponde ao seu sistema operacional
@@ -49,7 +63,8 @@ A API é protegida por JWT (JSON Web Tokens) para garantir que somente usuários
 4- Siga as instruções na tela para instalar o Maven
 
 #### jUnit Jupiter
-\\\ <dependencies>
+```
+ <dependencies>
     <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-api</artifactId>
@@ -57,6 +72,27 @@ A API é protegida por JWT (JSON Web Tokens) para garantir que somente usuários
         <scope>test</scope>
     </dependency>
 </dependencies> 
-///
+
+```
+1- Abra o arquivo pom.xml na IDE
+2- Localize a seção dependencies no arquivo
+3- Dentro da seção dependencies adicione o bloco de código acima
+4- Salve o arquivo
+
+#### RODANDO O PROJETO: 
+1- Clone o reposiório 
+-
+2- Instale as dependências
+```
+mvn install
+```
+3- Execute os Testes
+```
+mvn test
+```
+
+
+
+
 
 
