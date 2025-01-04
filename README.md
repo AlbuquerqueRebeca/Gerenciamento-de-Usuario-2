@@ -149,7 +149,11 @@ mvn start
 | DELETE | api/deletar-perfil?email= | Deleta perfil de usuário    |
 
 
+--------------------------------------------------------------------------------------------------------------
 
+#### REQUISIÇÕES
+
+##### REGISTRO DE USUARIO:
 
 
 
