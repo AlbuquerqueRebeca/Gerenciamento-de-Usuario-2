@@ -1,4 +1,4 @@
-## SISTEMA DE GERENCIAMENTO DE USUÁRIOS
+## SISTEMA DE GERENCIAMENTO DE USUÁRIOS   👩🏻‍💻 👥
 ---------------------------------------------
 
 
@@ -36,7 +36,7 @@ A API é protegida por JWT (JSON Web Tokens) para garantir que somente usuários
 ##### IDE: Eclipse
 ##### Controle de Versão: Git
 ##### Hospedagem de Código: GitHub
-##### Programa : Postman 
+##### Programa de teste da API : Postman 
 
 --------------------------------------------------------------------------------------------
 #### DEPENDÊNCIAS USADAS: 
@@ -150,25 +150,248 @@ mvn start
 
 
 --------------------------------------------------------------------------------------------------------------
+#### TOKEN (JWT)
+
+- Fazendo login
+```
+{ "username": "Rafaella",
+ "password": "242526"
+}
+```
+
+- Um token é gerado após a verificação de dados do usuário
+```
+{
+    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJyYWZhZWxsYSIsImlhdCI6MTczNjE5NDQ5Nn0.4XxnWYkEAhpH2QEndp1LaGa28ye7j9ISgt-Spswff75uSQ8c6Akq4V26JMofa8Gtsf0vwG413TDBGx4K6CJdPg"
+}
+```
+##### Com o uso de Bearer Token e adicionando o token gerado, o usuário tem acesso a todas as rotas de autentição:
+- Buscar usuário por email
+- Listar todos os usuários
+- Atualizar perfil
+- Deletar perfil
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
 
 #### REQUISIÇÕES
 
-##### REGISTRO DE USUARIO:
+##### REGISTRO DE USUÁRIO: 
+```
+{   "email":   "Rafaella-Floriano@hotmail.com",
+    "nome":   "Rafaella Floriano",
+    "login":   "Rafaella",
+    "senha":   "242526"
+}
+```
+
+- Usuário registrado retorna um status HTTP 200 (Ok)
+- Retornando a mensagem
+```
+Usuario registrado com sucesso!!!Rafaella Floriano
+```
+
+- Se houver um cadastro com mesmo email, retorna um status HTTP 400 (Bad Request)
+- Retornando a mensagem 
+  ```
+  Esse email já existe!!
+  ```
+  ##### BUSCANDO USUÁRIO POR EMAIL:
+
+  ```
+  http://localhost:8080/api/usuario?email=Rafaella-Floriano@hotmail.com
+  
+  ```
+
+   - Se o perfil de usuário for encontrado através do email, retorna um status HTTP 200 (OK)
+  - Retornando o perfil de usuário com a senha codificada:
 
 
+   ```
+  {
+    "email": "Rafaella-Floriano@hotmail.com",
+    "nome": "Rafaella Floriano",
+    "login": "rafaella",
+    "senha": "$2a$10$Z.QpcrdER0DNsHD1vUF0aOCJaU4v/yCRHzKE65jSbsQ8AOzYz29TW"
+  }
+   ```
 
+   - Se o email nao existir, retorna um status HTTP 404 (Not Found)
+ 
+   ##### LISTAR TODOS OS USUÁRIOS
 
+    - Usando o  Bearer Token com o token gerado, retorna um status 200 (OK)
+      
+    - O usuário consegue listar todos os outros usuários
+  
+     ```
+    {
+        "email": "aylla-rocha@hotmail.com",
+        "nome": "Aylla Rocha",
+        "login": "aylla",
+        "senha": "$2a$10$qjYXMqQYuavJxR9BUPhH6uFA/w3TeCyrWC3DXXj1CpZsXu.sDfNpW"
+    },
+    {
+        "email": "benjamin-oliveira@hotmail.com",
+        "nome": "Benjamin Oliveira",
+        "login": "bejnamin",
+        "senha": "$2a$10$ZD7NQflsIqCcF9AtLFNfwuy4/m.3YFcip765bHgDAZv1gQGcsZEC."
+    },
+    {
+        "email": "bob-albuquerque@hotmail.com",
+        "nome": "Bob Guanaes Albuquerque",
+        "login": "bob",
+        "senha": "$2a$10$CW3waWv61DoDS14LRniFHeS6BST2iKXGO9xG6u6tec5X0sR526AXi"
+    },
+    {
+        "email": "caio-nunes@hotmail.com",
+        "nome": "Caio Nunes",
+        "login": "caio",
+        "senha": "$2a$10$FVhQlkIDXo5eUXxShalCVuI6wyOedhv/JIU41.DT0uhxD9VGk9HNO"
+    },
+    {
+        "email": "catarina-fontenelle@hotmail.com",
+        "nome": "Catarina Fontenelle",
+        "login": "catarina",
+        "senha": "$2a$10$CxTC6FPa90AsrL3hYk9HYODUZ1spN49WyZyIpX3tISpkkB5LdtuHO"
+    },
+    ```
+   
+   ##### ATUALIZAR PERFIL
 
+   - Usando o Bearer Token e adicionando o token gerado, o usuário consegue atualizar qualquer dado do seu perfil
+  ```
+  {   "email":   "Rafaella-Floriano@hotmail.com",
+    "nome":   "Rafaella Floriano",
+    "login":   "Rafaella",
+    "senha":   "242526"
+  }
 
+    ```
 
+- Após adicionar o token o login foi alterado, retornando um status HTTP 200 (OK)
+- 
+- Retornando perfil alterado
+  
+ ```
+{
+    "email": "Rafaella-Floriano@hotmail.com",
+    "nome": "Rafaella Floriano",
+    "login": "Rafa",
+    "senha": "242526"
+}
+ ``` 
+##### DELETAR PERFIL
 
+- Usando o email para buscar e deletar o perfil
+-  Perfil encontrado retorna um status 200 (OK) deletando o perfil com sucesso 
+ ```
+http://localhost:8080/api/deletar-perfil?email=Rafaella-Floriano@hotmail.com
+ ```
+```
+Perfil deletado com sucesso!!!
+```
+- Se o perfil não for encontrado retorna um status 404 (Not Found)
+----------------------------------------------------------------------------------------
 
+#### TESTE UNITÁRIO
 
+1- Validando se a requisição registro de usuario está de fato criando um novo usuário
+```
+//Registrando usuario
+	@Test
+	void salvandoUsuario() { 
+	Usuario usuario = new Usuario(); 	
+	usuario.setEmail("Rafaella-Floriano@hotmail.com"); 
+	usuario.setNome("Rafaella Floriano"); 
+	usuario.setLogin("Rafaella"); 
+	usuario.setSenha("24294"); 
+	
+	
+	usuarioService.registrandoUsuario(usuario); 
+	
+	assertEquals("Rafaella-Floriano@hotmail.com", usuario.getEmail(), "Email salvo com sucesso!!");
+	assertEquals("Rafaella Floriano", usuario.getNome(), "Nome de usuario salvo com sucesso!!");
+	assertEquals("Rafaella", usuario.getLogin(), "Login salvo com sucesso!!"); 
+	
+	assertTrue(passwordEncoder.matches("24294", usuario.getSenha()),"Senha codificada com sucesso"); 
 
+		
+	}
+	
+  ```
 
+ 2-  Validando se a requisição listar todos está de fato buscando o perfil de usuario através do email
+  ```
+  //Buscando usuario por email
+	@Test
+	void buscandoUsuario() { 
+	String email = "Rafaella-Floriano@hotmail.com";
+	Optional<Usuario> usuario = usuarioService.buscandoUsuario(email); 
+	assertTrue(usuario.isPresent(), "Usuario encontrado"); 
+		
+	}
+   ```
 
+3- Validando se a requisição atualizar perfil está de fato atualizando o perfil de usário 
 
+```
+//Atualizando perfil de usuario
+	
+	@Test
+	void atualizandoPerfil() { 
+	Usuario usuario = new Usuario();
+	usuario.setEmail("Rafaella-Floriano@hotmail.com"); 
+	usuario.setNome("Rafaella Floriano"); 
+	usuario.setLogin("Rafaella"); 
+	usuario.setSenha("24294"); 
+	
+	usuario.setLogin("Rafaella");
+	
+	usuarioService.atualizandoPerfil(usuario); 
+	
+	Usuario perfilAtualizado = usuarioService.buscandoUsuario("Rafaella-Floriano@hotmail.com")
+			.orElseThrow(() -> new RuntimeException("Usuario não encontrado")); 
+			
+			assertEquals("Rafaella", perfilAtualizado.getLogin() , "Login atualizado com sucesso!!"); 
+			System.out.println("Perfil atualizado com sucesso!!!!!");
+		
+	  }
 
+  ```
+
+4-  Validando se a requisiçao deletar perfil está de fato deletando perfil de usuário através do email
+
+```
+ @Test
+	 void deletandoPerfil() { 
+	 Usuario usuario = new Usuario();
+	 usuario.setEmail("Rafaella-Floriano@hotmail.com"); 
+	 usuario.setNome("Rafaella Floriano"); 
+	 usuario.setLogin("Rafaella"); 
+	 usuario.setSenha("24294");
+	 
+	 
+	 usuarioService.buscandoUsuario(usuario.getEmail()); 
+	 
+	 Optional<Usuario> deletarUsuario = usuarioService.buscandoUsuario(usuario.getEmail());
+	 assertTrue(deletarUsuario.isEmpty(), "Perfil deletado com sucesso"); 
+	 
+	 System.out.println("Perfil deletado com sucesso!!!");
+		 
+	 }
+	
+
+```
+
+---------------------------------------------------------------------------------------------------------------------
+
+#### CONCLUSÃO
+
+Este projeto é uma aplicação onde o usuário é capaz de criar uma nova conta com dados básicos (email, nome e senha). Os usuários devem fazer login em suas contas usando suas credenciais, e todas as senhas são codificadas. Após o login e a verificação dos dados, eles receberão um token JWT que será usado para autenticar suas solicitações.
+
+Os usuários autenticados serão capazes de visualizar, atualizar e deletar seus perfis.
+
+Apesar de ser uma aplicação simples, este projeto foi essencial para praticar meus conhecimentos até aqui, incluindo Spring Web, Spring Security, banco de dados relacional, Maven e testes unitários.
 
 
 
