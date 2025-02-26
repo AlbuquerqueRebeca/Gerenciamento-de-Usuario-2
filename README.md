@@ -44,7 +44,7 @@ classDiagram
 
 
 
--------------------------
+<br><br><br>
 
 
 ## SISTEMA DE GERENCIAMENTO DE USUÁRIOS   👩🏻‍💻 👥
@@ -86,7 +86,7 @@ A API é protegida por JWT (JSON Web Tokens) para garantir que somente usuários
 ##### Controle de Versão: Git
 ##### Hospedagem de Código: GitHub
 ##### Programa de teste da API : Postman 
-
+##### Diagrama: Mermaid
 --------------------------------------------------------------------------------------------
 #### DEPENDÊNCIAS USADAS: 
 - Spring Web
@@ -441,7 +441,6 @@ Este projeto é uma aplicação onde o usuário é capaz de criar uma nova conta
 Os usuários autenticados serão capazes de visualizar, atualizar e deletar seus perfis.
 
 Apesar de ser uma aplicação simples, este projeto foi essencial para praticar meus conhecimentos até aqui, incluindo Spring Web, Spring Security, banco de dados relacional, Maven e testes unitários.
-
 
 
 
