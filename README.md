@@ -1,3 +1,52 @@
+```mermaid
+classDiagram
+    class Usuario {
+        -String email
+        -String nome
+        -String login
+        -String senha
+    }
+
+    class RegistrarUsuarioEndpoint {
+        +POST /api/registrar-usuario(Usuario usuario): ResponseEntity<String>
+    }
+
+    class BuscarUsuarioEndpoint {
+        +GET /api/usuario(String email): ResponseEntity<Usuario>
+    }
+
+    class ListarUsuariosEndpoint {
+        +GET /api/todos-usuarios(): ResponseEntity<List<Usuario>>
+    }
+
+    class AtualizarPerfilEndpoint {
+        +PUT /api/atualizar-perfil(Usuario usuario): ResponseEntity<Usuario>
+    }
+
+    class DeletarPerfilEndpoint {
+        +DELETE /api/deletar-perfil(String email): ResponseEntity<String>
+    }
+
+    Usuario <-- RegistrarUsuarioEndpoint
+    Usuario <-- BuscarUsuarioEndpoint
+    Usuario <-- ListarUsuariosEndpoint
+    Usuario <-- AtualizarPerfilEndpoint
+    Usuario <-- DeletarPerfilEndpoint
+
+
+
+    
+    
+    
+```
+
+
+
+
+
+-------------------------
+
+
 ## SISTEMA DE GERENCIAMENTO DE USUÁRIOS   👩🏻‍💻 👥
 ---------------------------------------------
 
